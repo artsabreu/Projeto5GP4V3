@@ -1,5 +1,5 @@
 # Projeto5GP4V3
-Essa é uma nova versão do "Projeto 5-II-PUC-II-GP4", criada por Arthur dos Santos Abreu.
+## 'Essa é uma nova versão do "Projeto 5-II-PUC-II-GP4", criada por Arthur dos Santos Abreu.
 
 Esse arquivo sera destinado a catalogar cada etapa do projeto, todas as tomadas de decisões, procedimentos, ferramentas, explicação de metadados e como navegar por todas as pastas e arquivos pelo projeto.
 
@@ -16,3 +16,4 @@ Um servidor em SQL chamado “enccejaplus2”, um servidor para banco de dados n
 Um Banco de dados em SQL chamado “MicrodadosPlus2”, que armazena no formato SQL todas as bases de dados do projeto, tanto o projeto interior quanto a atual continuidade.
 
 Uma conta de armazenamento chamada “datapuc”, que armazena todos os microdados d projeto em contêiners, vamos utilizar um contêiner chamado “datapucfiles”. Essa pasta é a responsável por armazenar todas as documentações das bases de dados, normas de todas as matrizes de conhecimento.
+

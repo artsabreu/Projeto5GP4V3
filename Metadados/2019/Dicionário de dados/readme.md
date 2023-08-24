@@ -10,5 +10,3 @@ Variaveis Categoricas | Vai responder as variaveis que tem categorias, tendo dua
 Tamanho | Vai descrever a quantidade de caracteres do valor da variavel
 Tipo | Vai descreve o tipo da variavel
 
-Para entender de forma mais detalhada cada arquivo que foi sendo alterando com o decorrer da edição das provas, basta ir selecioando as pastas dos anos, que estão logo acima.
-

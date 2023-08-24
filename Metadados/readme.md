@@ -19,6 +19,6 @@ Conforme a realização das provas durante os anos já listados, as matrizes, av
 
 * Dados:
 
-Para fazer a armazenagem dos dados 
+Para armazencar da melhor formas todas as bases de dados utilizadas no projeto
 
 

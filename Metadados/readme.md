@@ -10,10 +10,14 @@ Dentro de cada pasta teremos os seguintes pastas: Dados, dicionario, inputs, lei
 
 **Observação:** A pasta ***"sqlscrpitsgerais"***, foi criada no projeto anterior, lá dentro tem alguns scripts em sql usados para processos de padronização de dados e manipulação de registros. Futuramente, esses scrpits podem uteis.
 
+---
+
 ### **Contexto dos dados:**
 
 Conforme a realização das provas durante os anos já listados, as matrizes, avaliações socioeconomicas e estruturas foram se alterando. Com base no que foi dito,
 
+
+**Dados:
 
 
 

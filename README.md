@@ -3,9 +3,14 @@
 
 Esse arquivo sera destinado a catalogar cada etapa do projeto, todas as tomadas de decisões, procedimentos, ferramentas, explicação de metadados e como navegar por todas as pastas e arquivos pelo projeto.
 
-Base de dados: ENNCEJA / INEP
+### Base de dados: 
 
-Plataforma: Azure
+Sera utilizada a as bases de dados em CSV disponiveis no link: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/encceja
+É uma estrutura padrão do INEP, os dados são separados pro ano vai conter: os dados, o dicionario dos dados, os inputs em Saas, uma pasta Leia-me, que vai comportar todas as normas, regras e categorizações de leitura dos dados das provas e uma matriz de referencia, que sera responsavel por armazenar informações sobre cada matriz de conhecimento cobrada nas provas.
+
+### Plataforma: 
+
+Sera utilizada a plataforma de computação em nuvem da microsoft, a Azure
 
 Contextualização: Com base na análise prescritiva realizada no Eixo 4, a continuidade do projeto será direcionada a uma análise preditiva, com o intuito de mensurar o desempenho dos candidatos dentro de seus seguintes segmentos: estado, faixa etária, grupo socioeconômico e tipo de certificação.
 

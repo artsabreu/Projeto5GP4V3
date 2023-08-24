@@ -28,9 +28,7 @@ Com base na análise prescritiva realizada no Eixo 4, a continuidade do projeto 
 
 Para navegar pelo projetos, o projeto foi dividido em pastas, esse atual arquivo é a documentação completa que esta na pagina inicial do repositorio. A abaixo temos o nome de cada pasta do repositorio, sua devida contextualização e arquivos ali presentes:
 
-| Pasta  | Contexto  |
-| ------- | -------- |
-| Microdados  | Arnazenar os arquivos previstos no paragrafo de nome Base de dados    |
+1. **Meta dados**: Pasta destinada a armazenar os itens mencionados no paragrafo base de dados. Dentro dessa pasta, existe um arquivo readme.md, que contextualiza e explicada cada campo e arquivo ali presente.
 
 ---
 

@@ -8,15 +8,17 @@ Dentro de cada pasta teremos os seguintes pastas: Dados, dicionario, inputs, lei
 
 ![MetaDados](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7deb7629-eaa6-4b7c-91f0-9a2d6beaa9b8)
 
----
-
 ### **Contexto dos dados:**
 
 Conforme a realização das provas durante os anos já listados, as matrizes, avaliações socioeconomicas e estruturas foram se alterando. Com base no que foi dito,
 
+---
+
 * Pasta DADOS:
 
 Para armazencar da melhor formas todas as bases de dados utilizadas no projeto
+
+---
 
 * Pasta DICIONÁRIO:
 
@@ -32,10 +34,16 @@ Tipo | Vai descreve o tipo da variavel
 
 Para entender de forma mais detalhada cada arquivo que foi sendo alterando com o decorrer da edição das provas, basta ir selecioando as pastas dos anos, que estão logo acima.
 
-* MATRIZ DE REFERENCIA:
+---
 
-  
+* Pasta MATRIZ DE REFERENCIA:
+
+Ao selecionar essa pasta, temos duas pastas disponiveis, a pasta ensino médio e pasta ensino fundamental. Dentro da pasta ENSINO FUNDAMENTAL, temos 4 arquivos em PDF, uma para cada matriz de conhecimento, são elas: **CIENCIAS**, **HISTÓRIA e GEOGRAFIA**, **LÍNGUA PORTUGUESA** E **MATEMÁTICA**.
+
+Já dentro da pasta ENSINO MÉDIO, temos 4 arquivos em PDF, uma para cada matriz de conhecimento, são elas: CIÊNCIAS DA NATUREZA E SUAS TECNOLOGIAS, **CIÊNCIAS HUMANAS E SUAS TECNOLOGIAS**, **LINGUAGENS**, **CÓDIGOS E SUAS TECNOLOGIAS**, **MATEMÁTICA E SUAS TECNOLOGIAS**
+
+---
 
 * Pasta SQLSCRIPTSGERAIS:
 
-Foi criada no projeto anterior, lá dentro tem alguns scripts em sql usados para processos de padronização de dados e manipulação de registros. Futuramente, esses scrpits podem uteis.
+Ao selecionar essa pasta criada no projeto anterior, existem alguns scripts em sql usados para processos de padronização de dados e manipulação de registros. Futuramente, esses scrpits podem uteis.

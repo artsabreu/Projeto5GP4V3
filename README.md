@@ -6,6 +6,12 @@ Esse arquivo sera destinado a catalogar cada etapa do projeto, todas as **tomada
 
 ---
 
+### Contextualização: 
+
+Com base na análise prescritiva realizada no Eixo 4, a continuidade do projeto será direcionada a uma **análise preditiva, com o intuito de mensurar o desempenho dos candidatos dentro de seus seguintes segmentos: estado, faixa etária, grupo socioeconômico e tipo de certificação.** essa analise tem como objetivo, fazer a predição de quantidade de notas nas provas realizadas pelos proximos anos.
+
+---
+
 ### Base de dados: 
 
 Sera utilizada a as bases de dados em **CSV** disponiveis no link: [Microdados Encceja](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/encceja)
@@ -19,11 +25,6 @@ Sera utilizada a as bases de dados em **CSV** disponiveis no link: [Microdados E
 
 ---
 
-### Contextualização: 
-
-Com base na análise prescritiva realizada no Eixo 4, a continuidade do projeto será direcionada a uma **análise preditiva, com o intuito de mensurar o desempenho dos candidatos dentro de seus seguintes segmentos: estado, faixa etária, grupo socioeconômico e tipo de certificação.** essa analise tem como objetivo, fazer a predição de quantidade de notas nas provas realizadas pelos proximos anos.
-
----
 ### Navegação pelo repositorio:
 
 Para navegar pelo projetos, o projeto foi dividido em pastas, esse atual arquivo é a documentação completa que esta na pagina inicial do repositorio. A abaixo temos o nome de cada pasta do repositorio, sua devida contextualização e arquivos ali presentes:

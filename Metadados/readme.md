@@ -8,8 +8,7 @@ Dentro de cada pasta teremos os seguintes pastas: Dados, dicionario, inputs, lei
 
 ![MetaDados](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7deb7629-eaa6-4b7c-91f0-9a2d6beaa9b8)
 
-Segue o conteudos de cada uma delas logo a baixo:
-
+Dentro da pasta leia-me, temos o arquivo "Leia-me_Microdados_ENCCEJA_2019", que explica cada uma dessas pastas, segue abaixo o conteudo desse arquivo, esse texto foi desenvolvido pelo INEP.
 
 
 

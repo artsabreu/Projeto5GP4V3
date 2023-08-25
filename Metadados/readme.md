@@ -20,7 +20,7 @@ Para armazencar da melhor formas todas as bases de dados utilizadas no projeto
 
 ---
 
-* Pasta DICIONÁRIO:
+* Pasta DICIONÁRIO DE DADOS:
 
 Ao selecionar essa pasta, dois arquivos estãoa disponiveis, basicamente o mesmo conteudo, mas em formatos diferentes, um em formato xlsx e o outro em ODS. Dentro de cada arquivo, existem 4 pastas de trabalhos, são elas: NACIONAL REGULAR, NACIONALL PPL, QUESTIONÁRIO NACIONAL PPL E ITENS PROVA. Dentro de cada uma dessas pastas, teremos uma tabela chamada DICIONÁRIO DE VARIÁVEIS com as seguintes colunas:
 
@@ -47,3 +47,11 @@ Já dentro da pasta ENSINO MÉDIO, temos 4 arquivos em PDF, uma para cada matriz
 * Pasta SQLSCRIPTSGERAIS:
 
 Ao selecionar essa pasta criada no projeto anterior, existem alguns scripts em sql usados para processos de padronização de dados e manipulação de registros. Futuramente, esses scrpits podem uteis.
+
+---
+
+* Pasta INPUTS EM SPS E SAS:
+
+Ao selecionar essa pasta, existem arquivos em formato sas e sps que ajudam a manipular bases de dados do projeto
+
+---

@@ -30,4 +30,4 @@ A área de processo Caso de Negócio estabelece práticas onde a organização p
 A área de processo Financiamento do Programa estabelece a necessidade de desenvolver um programa de financiamento e  escolher um modelo de financiamento, iterativo e contínuo, mais adequado para o programa de gestão de dados e os projetos que o compõem.
 
 ***Fonte***: 
-![Big Data: Como gerir os dados usando DMM? - ProMove](https://promovesolucoes.com/tudo-o-que-voce-precisa-saber-para-gerir-dados-big-data-usando-dmm/)
+[Big Data: Como gerir os dados usando DMM? - ProMove](https://promovesolucoes.com/tudo-o-que-voce-precisa-saber-para-gerir-dados-big-data-usando-dmm/)

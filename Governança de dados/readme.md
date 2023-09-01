@@ -4,7 +4,7 @@ A governança de dados é um conjunto de práticas, políticas, processos e cont
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c53b3dfa-5b59-46bb-8602-a3dc820b2fea)
 
-Com base no que foi dito, é necessario alguma documentação ou referencia para fazer a aplicação da governança de dados, a aplicação utilizada em questão sera o **DAMA-DMBOK, que divide a gorvernança de dados em vareas areas:**
+Com base no que foi dito, é necessario alguma documentação ou referencia para fazer a aplicação da governança de dados, a aplicação utilizada em questão sera o **DAMA-DMBOK**, que divide se em 3 grandes areas, são elas: **Desenvolvimento Profissional, Comunicação e Qualidade de gestão de dados**. Cada area comtempla 3 subs areas logo a baixo:
 
 ---
 

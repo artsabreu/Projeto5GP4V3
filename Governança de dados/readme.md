@@ -2,8 +2,6 @@
 ## Governança de dados:
 A governança de dados é um conjunto de práticas, políticas, processos e controles que garantem a qualidade, a segurança, a integridade e o uso adequado dos dados em uma organização. Ela envolve a definição de responsabilidades claras, a implementação de políticas e procedimentos, a adoção de padrões e a criação de uma cultura que valorize e promova a governança dos dados.
 
-![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c53b3dfa-5b59-46bb-8602-a3dc820b2fea)
-
 Com base no que foi dito, é necessario alguma documentação ou referencia para fazer a aplicação da governança de dados, a aplicação utilizada em questão sera o **DAMA-DMBOK**, que divide se em 3 grandes areas, são elas: **Desenvolvimento Profissional, Comunicação e Qualidade de gestão de dados**. Cada area comtempla 3 subs areas logo a baixo:
 
 ---

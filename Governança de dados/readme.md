@@ -20,8 +20,6 @@ Envolve os processos e as atividades relacionadas à criação, modificação e 
 
 ### Database Operations Management:
 
----
-
 Diz respeito à administração e ao gerenciamento dos bancos de dados, incluindo o monitoramento, o desempenho, a segurança e a manutenção dos dados armazenados.
 
 ---

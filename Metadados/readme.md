@@ -52,6 +52,16 @@ Ao selecionar essa pasta criada no projeto anterior, existem alguns scripts em s
 
 * Pasta INPUTS EM SPS E SAS:
 
-Ao selecionar essa pasta, existem arquivos em formato sas e sps que ajudam a manipular bases de dados do projeto
+Ao selecionar essa pasta, existem arquivos em formato sas e sps que ajudam a manipular bases de dados do projeto.
 
 ---
+
+### Navegação pelo Repositorio de MetaDados:
+
+Segue uma explicação de como é feita a utilização do repositorio e as camadas do mesmo.
+
+* **Branchs**:
+
+**Master:** É o "Ambiente de produção" do projeto, essa branch vai armazenar todos os codigos e documentações oficiis. Sempre sendo a prioridade no quesito de vercionamento atualizado.
+
+**Bastidores:** É o "Ambiente de teste" do projeto, onde sera feitas todas as alterações de codigos e documentações antes

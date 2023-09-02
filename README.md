@@ -1,4 +1,17 @@
-# Projeto5GP4V3
+# Eixo 5 - Projeto: Arquitetura de Dados em Nuvem - Turma 01 - 2023/2
+
+---
+
+## Projeto5GP4V3
+
+---
+
+**Equipe:**
+- Arthur dos Santos Abreu.
+- Giovani Angelo Suarez Gonçalves.
+- Isabelly Luciana Avelar de Paula.
+
+---
 
 ### Essa é uma nova versão do "Projeto 5-II-PUC-II-GP4", criada por Arthur dos Santos Abreu.
 

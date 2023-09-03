@@ -10,52 +10,52 @@ Com base no que foi dito, é necessario alguma documentação ou referencia para
 
 ### Gerenciamento de arquitetura de dados: 
 
-Trata do planejamento, do projeto e da implementação de uma arquitetura de dados eficiente, que suporte as necessidades de negócio e garanta a integridade e a qualidade dos dados.
+Trata do planejamento, do projeto e da implementação de uma arquitetura de dados eficiente, que suporte as necessidades de negócio e garanta a integridade e a qualidade dos dados. Com base no que foi dito, 
 
 ---
 
 ### Desenvolvimento de dados:
 
-Envolve os processos e as atividades relacionadas à criação, modificação e melhoria contínua dos dados, incluindo o desenvolvimento de modelos de dados, a captura de dados e a integração de sistemas.
+Envolve os processos e as atividades relacionadas à criação, modificação e melhoria contínua dos dados, incluindo o desenvolvimento de modelos de dados, a captura de dados e a integração de sistemas. Com base no que foi dito,
 
 ---
 
 ### Gerenciamento de operações de banco de dados:
 
-Diz respeito à administração e ao gerenciamento dos bancos de dados, incluindo o monitoramento, o desempenho, a segurança e a manutenção dos dados armazenados.
+Diz respeito à administração e ao gerenciamento dos bancos de dados, incluindo o monitoramento, o desempenho, a segurança e a manutenção dos dados armazenados. Com base no que foi dito,
 
 ---
 
 ### Data Security Management: 
 
-Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança.
+Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança. Com base no que foi dito,
 
 ---
 
 ### Armazenamento de dados e gerenciamento de business intelligence:
 
-Aborda as atividades de design, desenvolvimento e manutenção de data warehouses e sistemas de business intelligence, visando fornecer informações úteis e relevantes para suportar a tomada de decisões.
+Aborda as atividades de design, desenvolvimento e manutenção de data warehouses e sistemas de business intelligence, visando fornecer informações úteis e relevantes para suportar a tomada de decisões. Com base no que foi dito,
 
 ---
 
 ### Gerenciamento de metadados:
 
-Envolve a definição, o armazenamento, a organização e o gerenciamento dos metadados, que são informações descritivas sobre os dados, tais como sua origem, seu significado e suas relações.
+Envolve a definição, o armazenamento, a organização e o gerenciamento dos metadados, que são informações descritivas sobre os dados, tais como sua origem, seu significado e suas relações. Com base no que foi dito,
 
 ---
 
 ### Gerenciamento de qualidade de dados:
 
-Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações.
+Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações. Com base no que foi dito,
 
 ---
 
 ### Data Governance:
 
-Aborda os princípios, políticas, estratégias e estruturas organizacionais necessárias para estabelecer a governança de dados em uma organização
+Aborda os princípios, políticas, estratégias e estruturas organizacionais necessárias para estabelecer a governança de dados em uma organização. Com base no que foi dito,
 
 ---
 
-Todase essas areas contempla as boas praticas da governança de dados. Com base no que foi dito, segue os procedimentos e tecnicas utilizadas de cada area dentro do projeto:
+Todase essas areas contempla as boas praticas da governança de dados. Com base no que foi dito, segue os procedimentos e tecnicas utilizadas de cada area dentro do projeto.
 
 

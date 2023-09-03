@@ -50,7 +50,7 @@ Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria
 
 ---
 
-### Data Governance:
+### Governança de dados:
 
 Aborda os princípios, políticas, estratégias e estruturas organizacionais necessárias para estabelecer a governança de dados em uma organização. Com base no que foi dito,
 

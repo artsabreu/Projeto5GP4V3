@@ -26,7 +26,7 @@ Diz respeito à administração e ao gerenciamento dos bancos de dados, incluind
 
 ---
 
-### Data Security Management: 
+### Gerenciamento de segurança de dados: 
 
 Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança. Com base no que foi dito,
 

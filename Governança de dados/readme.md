@@ -10,7 +10,7 @@ Com base no que foi dito, é necessario alguma documentação ou referencia para
 
 ### Gerenciamento de arquitetura de dados: 
 
-Trata do planejamento, do projeto e da implementação de uma arquitetura de dados eficiente, que suporte as necessidades de negócio e garanta a integridade e a qualidade dos dados. Com base no que foi dito, 
+Trata do planejamento, do projeto e da implementação de uma arquitetura de dados eficiente, que suporte as necessidades de negócio e garanta a integridade e a qualidade dos dados. Com base no que foi dito, a equipe desenvolveu uma modelagem de dados Star Schema, modelo proposto por Ralph Kimball, que preve uma tabela **FATO** o ponto central do schema, e varias tabelas nas pontas da estrela, cada ponta representa uma **DIMENSÃO**. A tabela **FATOS** contem as chaves de ligação com as tabelas **DIMENSÕES**. Garantindo uma menor redundancia de dados.
 
 ---
 

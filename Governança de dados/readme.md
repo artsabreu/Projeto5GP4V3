@@ -43,6 +43,7 @@ O monitoramento serve como o proprio nome diz, um monitor das atividade do banco
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/129fec62-17dd-4d44-aded-159f2590c2b4)
 
+Na aba de monitoramento, temos um gráfico que nos permite visualizar de forma grafica o desempenho de diversas metricas de desempenho a nivel temporal. Podendo ser observado em 24 horas ou 7 dias.
 
 ---
 

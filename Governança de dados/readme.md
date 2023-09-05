@@ -49,11 +49,17 @@ Na aba de monitoramento, temos um gráfico que nos permite visualizar de forma g
 
 Podemos escolher as seguintes métricas: Blocked by firewall, CPU percentage, Data IO percentage, Data Space allocated, Data space allocated, Data space used, Data space used percent, Deadlocks, DTU limit, DTU percentage, DTU used, Failed Connections :  System Errors, Failed Connctions: System Errors, Failed Ledger Digest Uploads, In-Memory OLTP storage percent, Log IO percentage, Sessions Count, Sessions percentage, Successful Connections, Successful Ledger Digest Uploads e Workers Percentage. Porem, nosso foco é monitor o desempenho da CPU e os limites de armazenamento no banco de dados.
 
-Para monitorar essas duas métricas, vamos usar as metricas CPU percentage e Data Space used, explorando a agregação média, maxima e minima. Podendo ver gráfico de linha, gráfico de area, gráfico de barras, gráficos de dispersão e Grade. Segue a baixo o gráfico de CPU percentage e todos os niveis de agregação:
+Para monitorar essas duas métricas, vamos usar as metricas CPU percentage e Data Space used, explorando a agregação média, maxima e minima. Podendo ver gráfico de linha, gráfico de area, gráfico de barras, gráficos de dispersão e Grade. Segue a baixo o gráfico de linhas de CPU percentage e todos os niveis de agregação:
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/326346de-80ec-430b-b209-6f9472c5f0a0)
 
-Oberve que o consumo é bem baixo,
+Oberve que o consumo é bem baixo, pois poucas utilizações do serviço foram feitas, logo a CPU foi pouco utilizada.
+
+Segue a baixo o gráfico de linhas que mostra o espaço de armazenamento usado, o espeço alocado e o espaço de armazenamento usado em porcentagem, entre janeiro e setembro desse ano, ano que de origem do banco de dados:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/0aac2fb9-b4a2-4157-8175-ebd51d0156e9)
+
+
 
 ---
 

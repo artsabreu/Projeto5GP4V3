@@ -27,7 +27,22 @@ Envolve os processos e as atividades relacionadas à criação, modificação e 
 
 ### Gerenciamento de operações de banco de dados:
 
-Diz respeito à administração e ao gerenciamento dos bancos de dados, incluindo o monitoramento, o desempenho, a segurança e a manutenção dos dados armazenados. Com base no que foi dito,
+Diz respeito à administração e ao gerenciamento dos bancos de dados, incluindo o monitoramento, o desempenho, a segurança e a manutenção dos dados armazenados. Com base no que foi dito, nosso banco de dados esta armazenado no serviço de banco de dados SQL da Microsoft Azure. Utilizamos a plataforma Azure Data Studio para fazer o processo ETL nos dados e todas importações e exportações para outros serviços envolvidos no projeto.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/964ece31-1cdd-4460-a82d-5bcee91c6626)
+
+Essa interface comprende mais o eixo de desenvolvimento de dados, graças a possibilidade de alterar os dados de fato. Então vamos voltar para a interface da azure, na aba de visão geral, temos os campos: Introdução, Monitoramento, Propriedades, recursos, notificações, integrações e tutoriais:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/b4c01fa6-e4b8-4e20-b2bc-bbe353df4e51)
+
+A introdução basicamente passa a as ferramentas e conexões externas para o banco de dados SQL do azure:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/12a1c180-6560-4e19-b218-6c8f247c881e)
+
+O monitoramento serve como o proprio nome diz, um monitor das atividade do banco de dados SQL com base em metricas já definidas pela plataforma ou definidas pela equipe. Existem 4 indicadores relacionados a armazenamento de dados no servidor, são eles:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/129fec62-17dd-4d44-aded-159f2590c2b4)
+
 
 ---
 

@@ -27,7 +27,7 @@ Envolve os processos e as atividades relacionadas à criação, modificação e 
 
 ### Gerenciamento de operações de banco de dados:
 
-Diz respeito à administração e ao gerenciamento dos bancos de dados, incluindo o monitoramento, o desempenho, a segurança e a manutenção dos dados armazenados. Com base no que foi dito,
+Diz respeito à administração e ao gerenciamento dos bancos de dados, incluindo o monitoramento, o desempenho, a segurança e a manutenção dos dados armazenados. Com base no que foi dito, nosso banco de dados esta armazenado no serviço de banco de dados SQL da Microsoft Azure. Utilizamos a plataforma Azure Data Studio para fazer o processo ETL nos dados e todas importações e exportações para outros serviços envolvidos no projeto.
 
 ---
 

@@ -4,7 +4,7 @@ A governança de dados é um conjunto de práticas, políticas, processos e cont
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/53d1a8da-fdd3-4cf9-b843-c9de655fcb79)
 
-Com base no que foi dito, é necessario alguma documentação ou referencia para fazer a aplicação da governança de dados, a aplicação utilizada em questão sera o **DAMA-DMBOK**, que divide se em 3 grandes areas, são elas: **Desenvolvimento Profissional, Comunicação e Qualidade de gestão de dados**. Cada area comtempla 3 subs areas logo a baixo:
+Com base no que foi dito, é necessario alguma documentação ou referencia para fazer a aplicação da governança de dados, a aplicação utilizada em questão sera o **DAMA-DMBOK**, que se divide em 8 areas patricas para gerenciar os dados, são elas:
 
 ---
 
@@ -47,7 +47,13 @@ Na aba de monitoramento, temos um gráfico que nos permite visualizar de forma g
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c02a07d3-5db3-4d80-b785-964b5a94cb96)
 
-Podemos escolher as seguintes métricas: Blocked by firewall, CPU percentage, Data IO percentage, Data Space allocated, Data space allocated, Data space used, Data space used percent, Deadlocks, DTU limit, DTU percentage, DTU used, Failed Connections :  System Errors, Failed Connctions: System Errors, Failed Ledger Digest Uploads
+Podemos escolher as seguintes métricas: Blocked by firewall, CPU percentage, Data IO percentage, Data Space allocated, Data space allocated, Data space used, Data space used percent, Deadlocks, DTU limit, DTU percentage, DTU used, Failed Connections :  System Errors, Failed Connctions: System Errors, Failed Ledger Digest Uploads, In-Memory OLTP storage percent, Log IO percentage, Sessions Count, Sessions percentage, Successful Connections, Successful Ledger Digest Uploads e Workers Percentage. Porem, nosso foco é monitor o desempenho da CPU e os limites de armazenamento no banco de dados.
+
+Para monitorar essas duas métricas, vamos usar as metricas CPU percentage e Data Space used, explorando a agregação média, maxima e minima. Podendo ver gráfico de linha, gráfico de area, gráfico de barras, gráficos de dispersão e Grade. Segue a baixo o gráfico de CPU percentage e todos os niveis de agregação:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/326346de-80ec-430b-b209-6f9472c5f0a0)
+
+Oberve que o consumo é bem baixo,
 
 ---
 

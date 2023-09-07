@@ -77,7 +77,25 @@ Aborda as atividades de design, desenvolvimento e manutenção de data warehouse
 
 ### Gerenciamento de metadados:
 
-Envolve a definição, o armazenamento, a organização e o gerenciamento dos metadados, que são informações descritivas sobre os dados, tais como sua origem, seu significado e suas relações. Com base no que foi dito,
+Envolve a definição, o armazenamento, a organização e o gerenciamento dos metadados, que são informações descritivas sobre os dados, tais como sua origem, seu significado e suas relações. Com base no que foi dito, a contrução de todos os metadados do nosso projeto foram documentados na pasta **Metadados**, 
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c72109d4-d6b1-42e7-9ab4-654e6469c93b)
+
+Que possui um arquivo read.me que descreve os metadados do projeto dividido por ano de edição das provas do Encceja.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/4d87ee96-aace-4084-a818-53b24172a109)
+
+Os metadados das bases de dados em CSV, que contemplam as questões, gabaritos e outras caracteristicas dos candidadatos, ficou por conta do arquivo em Excel disponivel nas pastas **Dicionarios de dados** presentes em cada ano, esse arquivo foi produzido pelo INEP.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/5ba84f3c-ff97-427d-ac4a-2d13f8fbd301)
+
+Para ver o Dicionarios, é necessario é baixar o arquivo em xlsx:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/901ffcd9-bb35-4e3f-bef4-defc3380eeac)
+
+Por ultimo, o INEP desenvolveu o arquivo "Leia-me_Microdados_ENCCEJA_2018(OU ANO ESCOLHIDO).PDF", esse arquivo vai explicar todos os metadados dos arquivos, disponivel no caminho Metadados/2018/Leia-me_Microdados_ENCCEJA_2018.pdf.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/4f2e2c69-0a57-48de-8d20-1bed3a091f5f)
 
 ---
 

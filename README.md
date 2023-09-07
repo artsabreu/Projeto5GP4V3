@@ -44,6 +44,8 @@ Para navegar pelo projetos, o projeto foi dividido em pastas, esse atual arquivo
 
 1. **Meta dados**: Pasta destinada a armazenar os itens mencionados no paragrafo base de dados. Dentro dessa pasta, existe um arquivo readme.md, que contextualiza e explicada cada campo e arquivo ali presente.
 
+2. **Governança de dados**: Pasta destinada a armazenar todos os metodos, tecnicas e procedimentos envolvendo a implementação da governança de dados e seu FrameWork DAMADMBOK.
+
 ---
 
 ### Ferramentas e recursos a serem utilizados: 

@@ -64,4 +64,4 @@ Segue uma explicação de como é feita a utilização do repositorio e as camad
 
 **Master:** É o "Ambiente de produção" do projeto, essa branch vai armazenar todos os codigos e documentações oficiis. Sempre sendo a prioridade no quesito de vercionamento atualizado.
 
-**Bastidores:** É o "Ambiente de teste" do projeto, onde sera feitas todas as alterações de codigos e documentações antes
+**Bastidores:** É o "Ambiente de teste" do projeto, onde sera feitas todas as alterações de codigos e documentações antes de ser oficializada e mergeada para a o "Ambiente de Produção", a branch Master.

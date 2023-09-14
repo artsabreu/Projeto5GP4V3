@@ -71,7 +71,7 @@ Trata da proteção dos dados contra ameaças internas e externas, garantindo a 
 
 ### Armazenamento de dados e gerenciamento de business intelligence:
 
-Aborda as atividades de design, desenvolvimento e manutenção de data warehouses e sistemas de business intelligence, visando fornecer informações úteis e relevantes para suportar a tomada de decisões. Com base no que foi dito,
+Aborda as atividades de design, desenvolvimento e manutenção de data warehouses e sistemas de business intelligence, visando fornecer informações úteis e relevantes para suportar a tomada de decisões. Com base no que foi dito, 
 
 ---
 
@@ -99,9 +99,9 @@ Por ultimo, o INEP desenvolveu o arquivo "Leia-me_Microdados_ENCCEJA_2018(OU ANO
 
 ---
 
-### Gerenciamento de qualidade de dados:
+### Gerenciamento de qualidade de dados e dados mestres de referencia:
 
-Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações. Com base no que foi dito,
+Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações. Já a parte de dados mestres de referencia, se refere a padronização dos dados da organização, os dados mestres são um conjunto de identificadores que fornecem contexto sobre dados de negocio como localizaçõ, clientes, produtos, ativos e etcc.. todos os dados que regem toda e qualquer operação. Se dividindo em: **Dados Transacionais, analiticos, e mestres**. Com base no que foi dito,
 
 ---
 

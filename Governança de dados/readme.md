@@ -21,7 +21,7 @@ Onde A tabela **FATOS** contem as chaves de ligação com as tabelas **DIMENSÕE
 
 ### Desenvolvimento de dados:
 
-Envolve os processos e as atividades relacionadas à criação, modificação e melhoria contínua dos dados, incluindo o desenvolvimento de modelos de dados, a captura de dados e a integração de sistemas. Com base no que foi dito,
+Envolve os processos e as atividades relacionadas à criação, modificação e melhoria contínua dos dados, incluindo o desenvolvimento de modelos de dados, a captura de dados e a integração de sistemas. Com base no que foi dito, ao decorrer do projeto, processos de ETL com o a ferramenta Azure Data Studio com a linguagem SQL e DataFactory para criação piepeline serão utilizados para fazer modificações e ou aprimoramentos conforme o necessario. Para a etapa 2 do projeto, nenhuma alteração foi feita, futuramente pode ser necessario.
 
 ---
 
@@ -58,8 +58,6 @@ Oberve que o consumo é bem baixo, pois poucas utilizações do serviço foram f
 Segue a baixo o gráfico de linhas que mostra o espaço de armazenamento usado, o espeço alocado e o espaço de armazenamento usado em porcentagem, entre janeiro e setembro desse ano, ano que de origem do banco de dados:
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/0aac2fb9-b4a2-4157-8175-ebd51d0156e9)
-
-
 
 ---
 
@@ -108,10 +106,10 @@ O microdados do Inep estão disponibilizados ao publico de maneira que garantem 
 A disposição dos dados dos resultados das provas são de facil interpretação uma vez que os dicionários existem são precisos e utilizam limguagem clara, permitendo assim uma análise racional que conduza a conclusões corretas.
 
 Entrentando, quando analizamos os dados do questionário socioeconomico que os candidatos respondem, o instituto o modificou, em certo momento afim de englobar questões referentes ao advento da pandemia. Fator que ganhou grande relevância uma vez que interferil na metodologia de ensino e aprendizado. Com tudo, no quedito de disponibilidade, tem-se apenas 2 questionários com questões deste cunho, o que compromete a precisão de análise préditiva que pretende-se atingir com este projeto.
+
 Um outro agravante refere-se a estrutura das questões que sao contantes nos 4 anos de aplicação. Por decisão institucional, aproveitando o acréscimo de questões, foi alterado de modo a concatenar questões em apenas uma ou dividir uma em várias, alterando assim as alternativas de resposta. Em síntese, ignorando as leves alterações que não refletem nos quesitos de qualidade, temos 2 tipos de questionparios (2018 e 2019) e (2020 e 2022).
 
-Como resultado de análise, foi decido que, apesar dos dados terem elevada qualidade intrínseca, contextual, de acessibilidade e de representação individulamente, ao olharmos para o conjunto dos 4 anos disponibilizados a precisão para uma análise preditiva dos questionário se torna baixa uma vez que o espaço amostral é curto. 
-Para efeito didático e objetivo acadêmico, a análise será realizado com esta resssalva 
+Como resultado de análise, foi decido que, apesar dos dados terem elevada qualidade intrínseca, contextual, de acessibilidade e de representação individulamente, ao olharmos para o conjunto dos 4 anos disponibilizados a precisão para uma análise preditiva dos questionário se torna baixa uma vez que o espaço amostral é curto. Para efeito didático e objetivo acadêmico, a análise será realizado com esta resssalva.
 
 ---
 

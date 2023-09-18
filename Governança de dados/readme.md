@@ -63,7 +63,40 @@ Segue a baixo o gráfico de linhas que mostra o espaço de armazenamento usado, 
 
 ### Gerenciamento de segurança de dados: 
 
-Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança. Com base no que foi dito,
+Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança. Com base no que foi dito, as nossas medidas de segurança foram realizadas na plataforma Microsoft Azure. 
+
+**Controle de Acesso (IAM)**
+
+Controle de acesso são medidas implementadas para garantir que os dados sejam acessados e modificados apenas por quem tem as devidas permissões. A credencial de acesso de cada usuário é como uma identidade digital. Ela serve como um registro para que o usuário possa ser autenticado, provando quem diz ser, para que assim possa ter acesso aos serviços e dados que foram permitidos a ele. O nível de acesso do usuário é determinado de acordo com a função atribuída a ele. 
+
+No nosso projeto implementamos níveis de acesso baseado em duas funções: Proprietário e Leitor. O nível de proprietário permite o gerenciamento de todos os recursos e a capacidade de modificar as funções. Já o nível de leitor permite a visualização de todos os recursos, mas eles não poderão ser modificados. 
+
+**Monitoramento de Logs**
+
+O painel de log de atividade permite o monitoramento de alterações no nosso projeto. Após selecionarmos os filtros necessários, podemos checar todas as modificações realizadas no tempo definido, o status e qual usuário realizou a ação. Esse monitoramento é extremamente importante para garantir a segurança dos nossos recursos. As informações coletadas podem ser utilizadas para identificar e corrigir problemas e detectar atividades suspeitas ou mal-intencionadas.
+
+
+---
+
+### Lei Geral de Proteção de Dados Pessoais (LGPD) :
+
+Aborda a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709, de 14/8/2018), cujo objetivo é assegurar o direito à privacidade e à proteção de dados pessoais dos usuários. A base de dados utilizada no nosso projeto foi fornecida pelo Inep que já realizou os devidos tratamentos dos dados. 
+
+**Previsão Legal**
+
+A base de dados utilizada foi fornecida pelo Inep, que é caracterizado como pessoa jurídica de direito público. 
+
+**Tratamento de Dados**
+
+Com base no que foi dito, de acordo com o inciso I do art. 23 da LGPD, as obrigações consistem em  publicar informações sobre os tratamentos de dados pessoais  realizados de forma clara e atualizada, detalhando a previsão legal, a finalidade, as práticas e os procedimentos utilizados para a execução desses tratamentos.
+
+**Finalidade**
+
+A finalidade é o propósito legítimo da coleta e do tratamento de dados informados ao titular. De acordo com as informações fornecidas pelo Inep, o tratamento de dados realizado tem por finalidade garantir o cumprimento de obrigações legais e regulatórias e contribuir à formulação, à implementação, ao acompanhamento e à avaliação de políticas e programas na área da educação, por meio de diagnósticos, pesquisas, estudos e avaliações da educação..
+
+**Direitos do Titular**
+
+A fim de garantir a transparência e o livre acesso aos dados, o Inep disponibiliza um canal de ouvidoria para que os titulares dos dados possam solicitar as informações pessoais desejadas.
 
 ---
 
@@ -99,13 +132,13 @@ Por ultimo, o INEP desenvolveu o arquivo "Leia-me_Microdados_ENCCEJA_2018(OU ANO
 
 ### Gerenciamento de qualidade de dados e dados mestres de referencia:
 
-Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações. Já a parte de dados mestres de referencia, se refere a padronização dos dados da organização, os dados mestres são um conjunto de identificadores que fornecem contexto sobre dados de negocio como localizaçõ, clientes, produtos, ativos e etcc.. todos os dados que regem toda e qualquer operação. Se dividindo em: **Dados Transacionais, analiticos, e mestres**.
+Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações. Já a parte de dados mestres de referência, se refere a padronização dos dados da organização, os dados mestres são um conjunto de identificadores que fornecem contexto sobre dados de negocio como localização, clientes, produtos, ativos e etcc.. todos os dados que regem toda e qualquer operação. Se dividindo em: **Dados Transacionais, analiticos, e mestres**.
 
-O microdados do Inep estão disponibilizados ao publico de maneira que garantem alta uqaliadade intrínseca, sobretudo pela elevada precisão, consistência e completude de informação. A forte e padroniação dos dados em suas colunas e tuplas trazem a consistência necessária para uma análise de alta credibilidade mantendo a reputação da instituição, sendo objetiva e de fácil acessibilidade e manipulações por pesquisadores, estudantes, educadores e toda a comunicdade educacional que venha a utilizar os dados dos resultados das provas para análises.
+O microdados do Inep estão disponibilizados ao público de maneira que garantem alta qualiadade intrínseca, sobretudo pela elevada precisão, consistência e completude de informação. A forte padroniação dos dados em suas colunas e tuplas trazem a consistência necessária para uma análise de alta credibilidade mantendo a reputação da instituição, sendo objetiva e de fácil acessibilidade e manipulações por pesquisadores, estudantes, educadores e toda a comunicdade educacional que venha a utilizar os dados dos resultados das provas para análises.
 
 A disposição dos dados dos resultados das provas são de facil interpretação uma vez que os dicionários existem são precisos e utilizam limguagem clara, permitendo assim uma análise racional que conduza a conclusões corretas.
 
-Entrentando, quando analizamos os dados do questionário socioeconomico que os candidatos respondem, o instituto o modificou, em certo momento afim de englobar questões referentes ao advento da pandemia. Fator que ganhou grande relevância uma vez que interferil na metodologia de ensino e aprendizado. Com tudo, no quedito de disponibilidade, tem-se apenas 2 questionários com questões deste cunho, o que compromete a precisão de análise préditiva que pretende-se atingir com este projeto.
+Entrentando, quando analizamos os dados do questionário socioeconômico que os candidatos respondem, o instituto o modificou, em certo momento a fim de englobar questões referentes ao advento da pandemia. Fator que ganhou grande relevância uma vez que interfere na metodologia de ensino e aprendizado. Com tudo, no quesito de disponibilidade, tem-se apenas 2 questionários com questões deste cunho, o que compromete a precisão de análise préditiva que pretende-se atingir com este projeto.
 
 Um outro agravante refere-se a estrutura das questões que sao contantes nos 4 anos de aplicação. Por decisão institucional, aproveitando o acréscimo de questões, foi alterado de modo a concatenar questões em apenas uma ou dividir uma em várias, alterando assim as alternativas de resposta. Em síntese, ignorando as leves alterações que não refletem nos quesitos de qualidade, temos 2 tipos de questionparios (2018 e 2019) e (2020 e 2022).
 

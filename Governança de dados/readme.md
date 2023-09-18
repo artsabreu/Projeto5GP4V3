@@ -64,25 +64,26 @@ Segue a baixo o gráfico de linhas que mostra o espaço de armazenamento usado, 
 ### Gerenciamento de segurança de dados: 
 
 Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança. Com base no que foi dito,
+
 ---
 
 ### Lei Geral de Proteção de Dados Pessoais (LGPD) :
 
-Aborda a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709, de 14/8/2018), cujo objetivo é assegurar o direito à privacidade e à proteção de dados pessoais dos usuários. 
+Aborda a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709, de 14/8/2018), cujo objetivo é assegurar o direito à privacidade e à proteção de dados pessoais dos usuários. A base de dados utilizada no nosso projeto foi fornecida pelo Inep que já realizou os devidos tratamentos dos dados. 
 
-Previsão Legal
+**Previsão Legal**
 
 A base de dados utilizada foi fornecida pelo Inep, que é caracterizado como pessoa jurídica de direito público. 
 
-Tratamento de Dados
+**Tratamento de Dados**
 
 Com base no que foi dito, de acordo com o inciso I do art. 23 da LGPD, as obrigações consistem em  publicar informações sobre os tratamentos de dados pessoais  realizados de forma clara e atualizada, detalhando a previsão legal, a finalidade, as práticas e os procedimentos utilizados para a execução desses tratamentos.
 
-Finalidade
+**Finalidade**
 
 A finalidade é o propósito legítimo da coleta e do tratamento de dados informados ao titular. De acordo com as informações fornecidas pelo Inep, o tratamento de dados realizado tem por finalidade garantir o cumprimento de obrigações legais e regulatórias e contribuir à formulação, à implementação, ao acompanhamento e à avaliação de políticas e programas na área da educação, por meio de diagnósticos, pesquisas, estudos e avaliações da educação..
 
-Direitos do Titular
+**Direitos do Titular**
 
 A fim de garantir a transparência e o livre acesso aos dados, o Inep disponibiliza um canal de ouvidoria para que os titulares dos dados possam solicitar as informações pessoais desejadas.
 

@@ -73,6 +73,9 @@ No nosso projeto implementamos níveis de acesso baseado em duas funções: Prop
 
 **Monitoramento de Logs**
 
+O painel de log de atividade permite o monitoramento de alterações no nosso projeto. Após selecionarmos os filtros necessários, podemos checar todas as modificações realizadas no tempo definido, o status e qual usuário realizou a ação. Esse monitoramento é extremamente importante para garantir a segurança dos nossos recursos. As informações coletadas podem ser utilizadas para identificar e corrigir problemas e detectar atividades suspeitas ou mal-intencionadas.
+
+
 ---
 
 ### Lei Geral de Proteção de Dados Pessoais (LGPD) :
@@ -129,13 +132,13 @@ Por ultimo, o INEP desenvolveu o arquivo "Leia-me_Microdados_ENCCEJA_2018(OU ANO
 
 ### Gerenciamento de qualidade de dados e dados mestres de referencia:
 
-Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações. Já a parte de dados mestres de referencia, se refere a padronização dos dados da organização, os dados mestres são um conjunto de identificadores que fornecem contexto sobre dados de negocio como localizaçõ, clientes, produtos, ativos e etcc.. todos os dados que regem toda e qualquer operação. Se dividindo em: **Dados Transacionais, analiticos, e mestres**.
+Trata das atividades relacionadas à avaliação, ao monitoramento e à melhoria da qualidade dos dados, para garantir a precisão, a consistência e a completude das informações. Já a parte de dados mestres de referência, se refere a padronização dos dados da organização, os dados mestres são um conjunto de identificadores que fornecem contexto sobre dados de negocio como localização, clientes, produtos, ativos e etcc.. todos os dados que regem toda e qualquer operação. Se dividindo em: **Dados Transacionais, analiticos, e mestres**.
 
-O microdados do Inep estão disponibilizados ao publico de maneira que garantem alta uqaliadade intrínseca, sobretudo pela elevada precisão, consistência e completude de informação. A forte e padroniação dos dados em suas colunas e tuplas trazem a consistência necessária para uma análise de alta credibilidade mantendo a reputação da instituição, sendo objetiva e de fácil acessibilidade e manipulações por pesquisadores, estudantes, educadores e toda a comunicdade educacional que venha a utilizar os dados dos resultados das provas para análises.
+O microdados do Inep estão disponibilizados ao público de maneira que garantem alta qualiadade intrínseca, sobretudo pela elevada precisão, consistência e completude de informação. A forte padroniação dos dados em suas colunas e tuplas trazem a consistência necessária para uma análise de alta credibilidade mantendo a reputação da instituição, sendo objetiva e de fácil acessibilidade e manipulações por pesquisadores, estudantes, educadores e toda a comunicdade educacional que venha a utilizar os dados dos resultados das provas para análises.
 
 A disposição dos dados dos resultados das provas são de facil interpretação uma vez que os dicionários existem são precisos e utilizam limguagem clara, permitendo assim uma análise racional que conduza a conclusões corretas.
 
-Entrentando, quando analizamos os dados do questionário socioeconomico que os candidatos respondem, o instituto o modificou, em certo momento afim de englobar questões referentes ao advento da pandemia. Fator que ganhou grande relevância uma vez que interferil na metodologia de ensino e aprendizado. Com tudo, no quedito de disponibilidade, tem-se apenas 2 questionários com questões deste cunho, o que compromete a precisão de análise préditiva que pretende-se atingir com este projeto.
+Entrentando, quando analizamos os dados do questionário socioeconômico que os candidatos respondem, o instituto o modificou, em certo momento a fim de englobar questões referentes ao advento da pandemia. Fator que ganhou grande relevância uma vez que interfere na metodologia de ensino e aprendizado. Com tudo, no quesito de disponibilidade, tem-se apenas 2 questionários com questões deste cunho, o que compromete a precisão de análise préditiva que pretende-se atingir com este projeto.
 
 Um outro agravante refere-se a estrutura das questões que sao contantes nos 4 anos de aplicação. Por decisão institucional, aproveitando o acréscimo de questões, foi alterado de modo a concatenar questões em apenas uma ou dividir uma em várias, alterando assim as alternativas de resposta. Em síntese, ignorando as leves alterações que não refletem nos quesitos de qualidade, temos 2 tipos de questionparios (2018 e 2019) e (2020 e 2022).
 

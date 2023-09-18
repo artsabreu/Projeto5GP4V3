@@ -63,7 +63,15 @@ Segue a baixo o gráfico de linhas que mostra o espaço de armazenamento usado, 
 
 ### Gerenciamento de segurança de dados: 
 
-Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança. Com base no que foi dito,
+Trata da proteção dos dados contra ameaças internas e externas, garantindo a confidencialidade, a integridade e a disponibilidade dos dados, bem como o comprimento das leis e regulamentos aplicáveis à privacidade e à segurança. Com base no que foi dito, as nossas medidas de segurança foram realizadas na plataforma Microsoft Azure. 
+
+**Controle de Acesso (IAM)**
+
+Controle de acesso são medidas implementadas para garantir que os dados sejam acessados e modificados apenas por quem tem as devidas permissões. A credencial de acesso de cada usuário é como uma identidade digital. Ela serve como um registro para que o usuário possa ser autenticado, provando quem diz ser, para que assim possa ter acesso aos serviços e dados que foram permitidos a ele. O nível de acesso do usuário é determinado de acordo com a função atribuída a ele. 
+
+No nosso projeto implementamos níveis de acesso baseado em duas funções: Proprietário e Leitor. O nível de proprietário permite o gerenciamento de todos os recursos e a capacidade de modificar as funções. Já o nível de leitor permite a visualização de todos os recursos, mas eles não poderão ser modificados. 
+
+**Monitoramento de Logs**
 
 ---
 

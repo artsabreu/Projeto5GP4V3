@@ -102,7 +102,9 @@ A fim de garantir a transparência e o livre acesso aos dados, o Inep disponibil
 
 ### Armazenamento de dados e gerenciamento de business intelligence:
 
-Aborda as atividades de design, desenvolvimento e manutenção de data warehouses e sistemas de business intelligence, visando fornecer informações úteis e relevantes para suportar a tomada de decisões. Com base no que foi dito, 
+Aborda as atividades de design, desenvolvimento e manutenção de data warehouses e sistemas de business intelligence, visando fornecer informações úteis e relevantes para suportar a tomada de decisões. Com base no que foi dito, o projeto utliza de um WorkSpace no azure data studio para possibilitar todo e qualquer proceso de DDL, DML necessarios para o banco de dados em SQL. Os recursos de aramazenamento do azure disponibilizam a estutura para fazer o controle de metrica como uso de GPU e CPU e os metodos de segurança. 
+
+Ao decorrer do projeto, os metodos e tecnicas do ML serão aplicados nas bases de tados para analises preditivas, gerando informações e se tornando conhecimento para tomadas de decisão a curto, médio e longo prazo, podendo criar graficos e visuais no proprio notebook de python ou até mesmo nas plataformas Tableau e Power BI.
 
 ---
 

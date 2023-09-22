@@ -147,7 +147,3 @@ Um outro agravante refere-se a estrutura das questões que sao contantes nos 4 a
 Como resultado de análise, foi decido que, apesar dos dados terem elevada qualidade intrínseca, contextual, de acessibilidade e de representação individulamente, ao olharmos para o conjunto dos 4 anos disponibilizados a precisão para uma análise preditiva dos questionário se torna baixa uma vez que o espaço amostral é curto. Para efeito didático e objetivo acadêmico, a análise será realizado com esta resssalva.
 
 ---
-
-Todase essas areas contempla as boas praticas da governança de dados. Com base no que foi dito, segue os procedimentos e tecnicas utilizadas de cada area dentro do projeto.
-
-

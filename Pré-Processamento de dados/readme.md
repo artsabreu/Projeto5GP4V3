@@ -6,7 +6,7 @@ Dando inicio a e esse Pré-Processamento, a equipe alinhou atraves de reunioes v
 
 ***Utilizaremos as respostas dos questionarios socioeconomicos dos participantes para inicialmente realizar uma analise prescritiva, a fim de entender tudo que já aconteceu em relação a situação socioeconomica dos participantes e como determinadas respostas impactam a nota final do candidato. Para em seguida, aplicarmos uma vissão preditiva, a fim de prever as proximas notas finais dos participantes que fizeram uma declaração socioecomica especifica na prova***
 
-Para contextualizar, esse questionario socieconomico preechido, se encontra nas ultimas colunas da base de dados ENCCEJA_REG_2018, ENCCEJA_REG_2019, ENCCEJA_REG_2020 e ENCCEJA_REG_2022. Tais repostas, ficam registradas em média nas ultimas 55 colunas, podendo variar de acordo com o ano. A tabela abaixo expoe essa diferença
+Para contextualizar, esse questionario socieconomico preechido, se encontra nas ultimas colunas da base de dados ENCCEJA_REG_2018, ENCCEJA_REG_2019, ENCCEJA_REG_2020 e ENCCEJA_REG_2022. A tabela abaixo expoe essa diferença
 
 Base de dados por ano | Quantidade de perguntas no questionario socioeconomico
 --------- | ------
@@ -14,8 +14,6 @@ ENCCEJA_REG_2018 | 47
 ENCCEJA_REG_2019 | 48
 ENCCEJA_REG_2020 | 66
 ENCCEJA_REG_2022 | 62
-
-Um simples calculo de média de colunas, 66 + 62 + 48 + 47 / 4 = 55
 
 A proxima imagem mostra uma pequena consulta de como é a visão dessas tabelas na base de dados, a ferramenta tulizada foi a Azure Data Studio na linguagem SQL:
 

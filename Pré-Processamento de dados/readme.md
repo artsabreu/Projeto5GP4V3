@@ -33,4 +33,32 @@ Cada linha, representa um aluno com suas determinadas escolhas no questionario. 
 
 [Dicionário de dados 2022.xlsx](https://github.com/artabreupuc/Projeto5GP4V3/blob/e02b0a68e89b12cd83763bc49bf51bcf25151b24/Metadados/2022/Dicion%C3%A1rio%20de%20dados/Dicionario%20de%20dados%202022.xlsx)
 
-Antes de tranformas em tabelas, cada arquivo teve 
+Antes de tranformarmos esses arquivos em tabelas SQL, utilizamos a ferramenta EXCEL para fazer algumas algumas alterações com a Ferramenta Microsoft Excel, são elas:
+
+- Remover as colunas "Tamanho e tipo". O campo "Dados do participante", "Dados do local de aplicação da prova", "Dados da prova objetiva" e "Dados da redação".
+
+- Remover dos cabeçalhos com suas formatações visuais, pois o arquivo após essas alteraçõs, seria convertido para CSV e importado para o banco de dados em SQL, logo, cabeçalhos e formatações não são necessarios.
+
+- Remover a mesclagem das das linhas presentes da coluna A e B. O questionario tem a estrutra de 4 colunas, onde as duas primeira colunas, A e B, tem a mesclagem média de 7 linhas para se tranformar em uma, armazenando o nome do questionario e o a descrição. Já as duas ultimas colunas, não tinham mesclagem, já que representavam o nome de cada alternativa e suas descrição. A imagem a baixo representa melhor essa estrutura:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/a7c9a662-b200-4954-b736-f60166db82ce)
+
+Essa formatação não é conveniente para nosso projeto, então foi necessario remover essa mesclage, ficando seguinte forma:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c0aac9bd-1b3b-4f50-ac87-784d952a90a9)
+
+A imagem abaixo mostra o antes e o depois desse processo:
+
+Antes: 
+![1](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/569dbca5-75d6-4d1c-9c76-945173e8d8f1)
+
+Não foi colocado junto da imagem o resto do questionario, a imagem iria ficar muito grande.
+
+---
+
+Depois:
+
+![merge](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/835232f4-ecc7-4bbc-8300-1a0b386190f6)
+
+Não foi colocado junto da imagem o resto do questionario, a imagem iria ficar muito grande.
+

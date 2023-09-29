@@ -60,3 +60,54 @@ Depois:
 
 Não foi colocado junto da imagem o resto do questionario, a imagem iria ficar muito grande.
 
+---
+
+Após realizar todas essas alterações em cada uma das tabelas por ano, realizamos a conversão dos arquivos de xlsx para csv e fizemos a importação de cada tabela para nosso banco de dados em sql da Azure, utilizando a ferramenta Azure Data Studio, a a função utilizada se chama import, ela é uma extensão responsavel por importar arquivos em csv para um determinado banco de dados escolhido pelo usuario, as imagens abaixo ilustram tal ação:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/4c8ca5da-b97e-4bfd-9eaf-d451c814c281)
+
+Selecionando a função com o botão direito do mouse em cima do banco.
+
+---
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/456cff6e-748e-4e23-8df4-9361bc274fa2)
+
+Escolhendo o banco de dados.
+
+---
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/30ee93a5-73fc-4cc9-b332-d0d320bab615)
+
+Procurando o arquivo para importação.
+
+---
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7c4e85f4-a681-474f-9d14-c9e6ed8ab300)
+
+Definindo o nome, o padrão do mesmo será: ENCCEJA_DICI_REG_2018, mudando apenas o numero do ano no final de cada tabela.
+
+---
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/6e1e340c-8f93-4b2c-8fe5-efb5c2abb45e)
+
+Revisando os dados para ver se está tudo bem dispoto.
+
+---
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/49346171-ea24-4faf-a0ca-0a4c0796eb1d)
+
+Escolhendo o tipo de dado e o nome, nesse caso, sera nvarchar para todos os campos e os nomes serão: ID_Q, Desc_Quest, Alternativa e Desc_alternatva, a imagem é meramente ilustrativa, as importações corretas e datatypes coerentes já foram feitos.
+
+---
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/a8d59571-d02c-444b-bb77-e90314606610)
+
+Agora basta importar e testar para validar o processo.
+
+---
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c70808f3-2f32-4531-a749-daba639ffcac)
+
+Importação feita com sucesso!!
+
+---

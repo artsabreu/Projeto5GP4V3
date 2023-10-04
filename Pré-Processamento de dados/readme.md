@@ -112,5 +112,55 @@ Importação feita com sucesso!!
 
 ---
 
-Aoós ser feita a importação, a equipe buscou alguma forma de mapear a 
+Após ser feita a importação, a equipe buscou alguma forma de mapear as questões socioeconômicas com maior influencia na aprovação dos candidatos. Onde cada questão possui uma serie de alternativas, essas series podem montar um contexto onde a aprovação do provado é mais palpável pelo mesmo. 
+
+Algo interessantes a se destacar, é que um candidato se encontra aprovado quando (@GiovanniPuc, preciso que por gentileza você desenvolva a explicação do contexto de aprovação para nós, não me recordo muito bem)
+
+Dando continuidade ao processo, fomos em busca de alguma informação estatística que mostre o verdadeiro peso da realidade socioeconômica do candidato em relação ao eu resultado. O primeiro resultado de tal busca, foi o site do próprio INEP, que possui uma categoria totalmente dedicada a contextualização do ENCCEJA, link para o site: https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/encceja
+
+Dentro dessa pagina, temos a pagina Resultados (https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/encceja/resultados), e dentro de resultados, a área de sinopses Estatísticas (https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/sinopses-estatisticas/encceja), que tem como objetivo, Armazenar principais  informações coletadas  junto  aos  seus  inscritos  e   da aplicação  do exame  a cada edição. São compostas por uma coletânea de tabelas que objetiva fornecer informações passíveis de traçar os diferentes perfis dos inscritos, disponibilizar informações advindas da aplicação dos questionários socioeconômicos e fornecer um rol de dados sobre o desempenho no exame.  A Sinopse é dividida pelos tipos de exame – Nacional e Exterior – e de participantes – regulares e pessoas privadas de liberdade (PPL) e adolescentes sob medidas socioeducativas. Os dados são desagregados por região e Unidade da Federação, no Encceja Nacional; e países e cidades, no caso do Encceja Exterior, com intuito de auxiliar na formulação, monitoramento e avaliação de políticas públicas.
+
+Cada ano, possui sua própria sinopse estatística,  para esse momento seguimos com os ano de 2018 (https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_encceja/Sinopse_ENCCEJA_2018.zip),
+2019 (https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_encceja/Sinopse_ENCCEJA_2019.zip),
+2020 https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_encceja/Sinopse_ENCCEJA_2020.zip) e 
+2022 (https://download.inep.gov.br/informacoes_estatisticas/sinopses_estatisticas/sinopses_encceja/Sinopse_ENCCEJA_2022.zip).
+
+![Imagem do WhatsApp de 2023-10-03 à(s) 21 14 54_cdfec552](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/969cec63-6dce-444d-a012-5a7bbbd28389)
+
+Cada uma dos link acima, disponibiliza dois arquivos, um em Planilha Opendocument e outro em formato Planilha de Microsoft Excel. O conteúdo dos arquivos é igual, apenas o formato é alterado.
+
+Ao abrir o arquivo, temos a seguinte estrutura:
+
+![Imagem do WhatsApp de 2023-10-03 à(s) 21 27 47_289ad429](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/482c4f7a-02f5-4606-ab4f-ec4c1b03796c)
+Uma pagina inicial com informações relevantes sobre a sinopse.
+
+![Imagem do WhatsApp de 2023-10-03 à(s) 21 28 19_21f02ad8](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c83e09d3-f14f-46de-af0c-32b66696fbce)
+Contado dos desenvolvedores da planilha.
+
+![Imagem do WhatsApp de 2023-10-03 à(s) 21 29 26_a083b6f3](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/33b3810b-5842-47f0-95fa-fc68f6fbff4d)
+Corpo técnico envolvido.
+
+![Imagem do WhatsApp de 2023-10-03 à(s) 21 30 44_067dee8c](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/49996c29-77ab-4d90-9dcb-0eca972c997b)
+Manual de citações.
+
+![Imagem do WhatsApp de 2023-10-03 à(s) 21 44 28_f104e732](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/e11296ef-5e7e-4bfb-8497-befb3e9eb6d2)
+
+E o sumario, cada um dos 8 itens item do sumario, será responsável por armazenar algumas informações estatísticas, e seus subitens uma analise especifica:
+
+***Participantes Regulares:**
+1. Inscritos.
+2. Fatores de contexto.
+3. Desempenho.
+
+**Participantes PPL´s:**
+4. Inscritos.
+5. Desempenho.
+
+**ENCCEJA EXTERIOR, Participantes Regulares:**
+6. Inscritos.
+7. Fatores de contexto.
+8. Desempenho.
+
+Nosso foco no momento, são as estatísticas do item 2, fatores de contexto e seus subitens, 2.1 á 2.22.
+
 

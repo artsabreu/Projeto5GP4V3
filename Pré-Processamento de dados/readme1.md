@@ -1,7 +1,3 @@
-**Boa noite equipe, todos bem?**
-
-Venho por meio dessa mensagem, relatar uma dificuldade que esta muito presente na atual fase do projeto.
-
 A atual fase do trabalho, tem como objetivo, fazer uma analise exploratória dos dados para coletar informações relevantes para futuras analises preditiva. De forma mais objetiva, estamos buscando uma forma de escolher as questões socioeconômicas com maior peso na aprovação dos candidatos, para isso, utilizamos uma consulta em sql na plataforma azure data studio para contar a quantidade de candidatos que marcou cada alternativa, de cada questão e de cada ano. Para em seguida, um outro comando retornasse a quantidade de aprovados dentro de cada contagem de marcação. 
 Segue a baixo a consulta, a primeira vista é mais difícil de entender:
 

@@ -390,3 +390,18 @@ Com essa tabela pronta, basta aplicar alguma formula para filtrar as 10 maiores 
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/2e4880e3-7c5f-4de7-8f7e-9ba3788e3889)
 
+Com esse rankeamento em mãos, uma analise quantitativa como essa, é um excelente norte para futuras analises preditivas, porem, ao olhar de forma detalhada cada uma das quetoes do rankeamento, a equipe não considerou as questoes validas dendro uma visão qualitativa, por exemplo: 
+
+Na questão Q03,
+
+Alternativa | Respostas | Quantidade de mascações
+--------- | ------ | ---------
+A | Zona Rural | 19710
+B | Zona urbana | 229905
+C | Comunidade indígena | 351
+D | Comunidade quilombola | 236
+
+Com essas 229905 marcações de moradores da zona urbana, não parece relevante para a aprovação de um candidato, residir na zona urbana. Com 
+
+
+

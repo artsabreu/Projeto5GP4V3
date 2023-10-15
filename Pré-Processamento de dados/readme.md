@@ -375,3 +375,18 @@ Após a execução das consultas, um painel de resultado fica disponivel por sel
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/79be37d8-6be8-43f6-8bc8-0637acd862a4)
 
 Após executar todas as consultas, podemos unir todos os resultados de cada questão e rankear para ver qual questão possui o maior numero de aprovados, entregando nossas questões com maior peso na aprovação do candidato.
+
+Para realizar tal tarefa, primeiro é necessario reunir todos os aqruivos csv de cada resposta que foi consultada na imagem anteterior.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/a0bcf916-b68d-46c5-8836-7292c1065d7a)
+
+A equipe optou por criar um arquivo em excel e agrupar todos os arquivos em csv para mapear as maiores aprovações.
+
+Com o aqruivo chamado allresults.xlsx criado, utilizamos a função obter dados de pasta, unimos os aqruivos em csv e aplicamos uma formatação, segue uma imagem para melhor compreensão:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/b9f05719-579c-4f12-8125-eb006c41a588)
+
+Com essa tabela pronta, basta aplicar alguma formula para filtrar as 10 maiores contagens de marcação de alternativa e uma estrutura para tal rankeamento, segue a estrtura de rankeamento abaixo:
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/2e4880e3-7c5f-4de7-8f7e-9ba3788e3889)
+

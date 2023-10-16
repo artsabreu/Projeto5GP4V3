@@ -404,5 +404,545 @@ B | Zona urbana | 229905
 C | Comunidade indígena | 351
 D | Comunidade quilombola | 236
 
+Com base no que foi dito, segue a baixo as questoes dos questionarios escolhidos de cada ano:
+
+---
+
+### **2018:**
+
+---
+
+**Q04.** Qual é o nível de escolaridade do seu pai? (Marque apenas uma resposta)
+
+- A. Da 1ª à 4ª série do Ensino Fundamental (antigo primário);
+- B. Da 5ª à 8ª série do Ensino Fundamental (antigo ginásio);
+- C. Ensino Médio (antigo 2º grau);
+- D. Ensino Superior;
+- E. Especialização;
+- F. Não estudou;
+- G. Não sei.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7ee57411-b86b-4604-8ae7-c0766268154f)
+
+**Q05.** Qual é o nível de escolaridade da sua mãe? (Marque apenas uma resposta)	
+
+- A. Da 1ª à 4ª série do Ensino Fundamental (antigo primário);
+- B. Da 5ª à 8ª série do Ensino Fundamental (antigo ginásio);
+- C. Ensino Médio (antigo 2º grau);
+- D. Ensino Superior;
+- E. Especialização;
+- F. Não estudou;
+- G. Não sei.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/61612c77-422e-4e44-af69-87598fd9551c)
+
+**Q08.** Você trabalha ou já trabalhou? (Marque apenas uma resposta)
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/272430b0-ff5b-4804-83fe-cf2403c9f0a5)
+
+**Q10.** Indique o grau de importância de cada um dos motivos abaixo na sua decisão de trabalhar: Ajudar nas despesas com a casa.
+
+0.
+1.
+2.		
+3.	
+4.
+5.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/41bdd85a-e30f-4a08-8ed3-aaeba69e7185)
+
+**Q11.** Indique o grau de importância de cada um dos motivos abaixo na sua decisão de trabalhar: Sustentar minha família (esposo/a, filhos/as etc.).
+
+0. 
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/628007a8-be40-48e4-8b6c-2763dc13a011)
+
+**Q14.** Indique o grau de importância de cada um dos motivos abaixo na sua decisão de trabalhar: Custear/ pagar meus estudos.
+
+0. 
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/1be46ae5-1208-4cf8-a2e8-6d4c3714ac7b)
+
+**Q16.** Com que idade você começou a trabalhar? (Marque apenas uma resposta).
+
+- A. Antes dos 14 anos;
+- B. Entre 14 e 16 anos;
+- C. Entre 17 e 18 anos;
+- D. Após 18 anos.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/29fbeef1-1d69-4d8c-8c19-c5a19c960101)
+
+**Q17.** Como você avalia ter estudado e trabalhado durante seus estudos? (Marque apenas uma resposta).	
+
+- A. Atrapalhou meus estudos;
+- B. Possibilitou meus estudos;
+- C. Possibilitou meu crescimento pessoal;
+- D. Não atrapalhou meus estudos.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7266d733-6441-4d3e-bbb4-c3df03c892e8)
+
+**Q22.** Indique o grau de importância dos motivos que levaram você a participar do ENCCEJA: Para conseguir o certificado de conclusão do Ensino Fundamental ou Médio.	
+
+0.	
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/e0ae3033-e382-4804-aee9-d4d95309451f)
+
+**Q23.** Indique o grau de importância dos motivos que levaram você a participar do ENCCEJA: Porque parentes, amigos(as) e professores(as) me recomendaram.
+
+0.
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/bf7b5500-107f-4708-8601-87738d3e8fc5)
+
+**Q43.** Em que medida os motivos a seguir influenciaram no fato de você não ter frequentado ou ter abandonado a escola regular:  Trabalho - falta de tempo para estudar.
+
+0.
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/8b99bcda-abb2-4eba-bda1-d923bcc39150)
+
+**Q47.** Em que medida os motivos a seguir influenciaram no fato de você não ter frequentado ou ter abandonado a escola regular: Discriminação/preconceitos de raça, sexo, cor, idade ou socioeconômico.	
+
+0.
+1.	
+2.	
+3.	
+4.	
+5.	
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/0eb4b270-8e47-40ef-a765-5fe30cc46e39)
+
+---
+
+### **2019:**
+
+---
+
+**Q04.** Qual é o nível de escolaridade do seu pai? (Marque apenas uma resposta)
+
+- A. Da 1ª à 4ª série do Ensino Fundamental (antigo primário);
+- B. Da 5ª à 8ª série do Ensino Fundamental (antigo ginásio);
+- C. Ensino Médio (antigo 2º grau);
+- D. Ensino Superior;
+- E. Especialização;
+- F. Não estudou;
+- G. Não sei.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7ee57411-b86b-4604-8ae7-c0766268154f)
+
+**Q05.** Qual é o nível de escolaridade da sua mãe? (Marque apenas uma resposta)	
+
+- A. Da 1ª à 4ª série do Ensino Fundamental (antigo primário);
+- B. Da 5ª à 8ª série do Ensino Fundamental (antigo ginásio);
+- C. Ensino Médio (antigo 2º grau);
+- D. Ensino Superior;
+- E. Especialização;
+- F. Não estudou;
+- G. Não sei.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/61612c77-422e-4e44-af69-87598fd9551c)
+
+**Q08.** Você trabalha ou já trabalhou? (Marque apenas uma resposta)
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/272430b0-ff5b-4804-83fe-cf2403c9f0a5)
+
+**Q10.** Indique o grau de importância de cada um dos motivos abaixo na sua decisão de trabalhar: Ajudar nas despesas com a casa.
+
+0.
+1.
+2.		
+3.	
+4.
+5.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/41bdd85a-e30f-4a08-8ed3-aaeba69e7185)
+
+**Q11.** Indique o grau de importância de cada um dos motivos abaixo na sua decisão de trabalhar: Sustentar minha família (esposo/a, filhos/as etc.).
+
+0. 
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/628007a8-be40-48e4-8b6c-2763dc13a011)
+
+**Q14.** Indique o grau de importância de cada um dos motivos abaixo na sua decisão de trabalhar: Custear/ pagar meus estudos.
+
+0. 
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/1be46ae5-1208-4cf8-a2e8-6d4c3714ac7b)
+
+**Q16.** Com que idade você começou a trabalhar? (Marque apenas uma resposta).
+
+- A. Antes dos 14 anos;
+- B. Entre 14 e 16 anos;
+- C. Entre 17 e 18 anos;
+- D. Após 18 anos.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/29fbeef1-1d69-4d8c-8c19-c5a19c960101)
+
+**Q17.** Como você avalia ter estudado e trabalhado durante seus estudos? (Marque apenas uma resposta).	
+
+- A. Atrapalhou meus estudos;
+- B. Possibilitou meus estudos;
+- C. Possibilitou meu crescimento pessoal;
+- D. Não atrapalhou meus estudos.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7266d733-6441-4d3e-bbb4-c3df03c892e8)
+
+**Q22.** Indique o grau de importância dos motivos que levaram você a participar do ENCCEJA: Para conseguir o certificado de conclusão do Ensino Fundamental ou Médio.	
+
+0.	
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/e0ae3033-e382-4804-aee9-d4d95309451f)
+
+**Q23.** Indique o grau de importância dos motivos que levaram você a participar do ENCCEJA: Porque parentes, amigos(as) e professores(as) me recomendaram.
+
+0.
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/bf7b5500-107f-4708-8601-87738d3e8fc5)
+
+**Q44.** Em que medida os motivos a seguir influenciaram no fato de você não ter frequentado ou ter abandonado a escola regular:  Trabalho - falta de tempo para estudar.
+
+0.
+1.	
+2.	
+3.	
+4.	
+5.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/8b99bcda-abb2-4eba-bda1-d923bcc39150)
+
+---
+
+### **2020:**
+
+---
+
+**Q04.** Você já frequentou alguma vez a escola regular?
+
+- A. Sim, já frequentei escola regular.
+- B. Sim, estou frequentando escolar regular.
+- C. Não, nunca frequentei.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/1b8c73f0-0bf5-40dd-bacd-1441f6a2086a)
+
+**Q05.** Em que série você parou de estudar? (Marque apenas uma resposta)	
+
+- A. 1ª série do ensino fundamental (antigo primário, 1º grau)
+- B. 2ª série do ensino fundamental (antigo primário, 1º grau)
+- C. 3ª série do ensino fundamental (antigo primário, 1ºgrau)
+- D. 4ª série do ensino fundamental (antigo primário, 1º grau)
+- E. 5ª série do ensino fundamental (antigo ginásio, 1º grau)
+- F. 6ª série do ensino fundamental (antigo ginásio, 1º grau)
+- G. 7ª série do ensino fundamental (antigo ginásio, 1ºgrau)
+- H. 8ª série do ensino fundamental (antigo ginásio, 1º grau)
+- I. 1ª série do ensino médio (antigo 2º grau)
+- J. 2ª série do ensino médio (antigo 2º grau)
+- K. 3ª série do ensino médio (antigo 2º grau)
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7d519022-d9f0-4f31-a781-474fa05a6b9f)
+
+**Q10.** Assinale  Sim ou Não se os seguintes  motivos te influenciaram a deixar de frequentar a escola: Falta de tempo para estudar.
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/69c8c4eb-8a7d-4c29-8056-00acf17216a7)
+
+**Q11.** Assinale  Sim ou Não se os seguintes  motivos te influenciaram a deixar de frequentar a escola: Maternidade/paternidade na adolescência.
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/ff365445-fe47-4e28-af9a-f7721f641267)
+
+**Q13.** Assinale  Sim ou Não se os seguintes  motivos te influenciaram a deixar de frequentar a escola: Necessidade de trabalhar para ajudar a família.
+
+- A. Sim;
+- B. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/434c5506-cdcd-44a2-94d9-ed504b454425)
+
+**Q24.** Assinale Sim ou  Não  se os seguintes  motivos te influenciaram a participar do Encceja: Conseguir uma vaga melhor no trabalho atual.	
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/225d58eb-46a2-4913-ad67-df9595329026)
+
+**Q26.** Assinale Sim ou  Não  se os seguintes  motivos te influenciaram a participar do Encceja: Obter um certificado oficial.
+
+- A. Sim;
+- B. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/da67a06d-6fb1-4578-9c26-531d7fcc9bad)
+
+**Q27.** Assinale Sim ou  Não  se os seguintes  motivos te influenciaram a participar do Encceja: Ter acesso ao mercado de trabalho formal.	
+
+- A. Sim;
+- B. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/56af6cfe-6e93-483c-9dcf-1f8e917d15f9)
+
+**Q33.** Indique o nível de escolaridade do seu pai: Ensino Fundamental I (antigo primário, da 1ª à 4ª série).
+
+- A. Completo.
+- B. Incompleto.
+- 
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/af35f0ea-e006-45a5-bb31-539bd8f8334d)
+
+**Q34.** Indique o nível de escolaridade do seu pai: Ensino Fundamental II (antigo ginásio, da 5ª à 8ª série).
+
+- A. Completo;
+- B. Incompleto.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/4a250f01-1299-4256-8e42-4c6140f8783c)
+
+**Q35.** Indique o nível de escolaridade do seu pai: Ensino Médio (antigo 2º grau).
+
+- A. Completo;
+- B. Incompleto.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/805e9203-8f56-4248-a4e1-d2da4bf2db86)
+
+**Q36** Indique o nível de escolaridade do seu pai: Ensino Superior.
+
+- A. Completo.
+- B. Incompleto.
+- 
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/ad50943c-8cac-4d6f-9cfa-0c9216f618e4)
+
+**Q37.** Indique o nível de escolaridade do seu pai: Outro.
+
+- A. Estudou, mas não sei até que nível.
+- B. Não estudou.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/31c66bf2-40bd-409e-aa03-7dcddef3d04c)
+
+**Q39.** Indique o nível de escolaridade da sua mãe: Ensino Fundamental I (antigo primário, da 1ª à 4ª série).
+
+- B. Incompleto.
+- A. Completo.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/42a6c83d-239b-4a92-b792-0956bebfc5fc)
+
+**Q40.** Indique o nível de escolaridade da sua mãe: Ensino Fundamental I (antigo primário, da 1ª à 4ª série).
+
+- B. Incompleto.
+- A. Completo.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/547aace0-53a8-43a5-9487-f1ae1f58c304)
+
+**Q41.** Indique o nível de escolaridade da sua mãe: Ensino Fundamental II (antigo ginásio, da 5ª à 8ª série).
+
+- B. Incompleto.
+- A. Completo.
+- 
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/5fb7b843-04b3-4556-8c3c-9fb9c2c52a2c)
+
+**Q42.** Indique o nível de escolaridade da sua mãe: Ensino Médio (antigo 2º grau).
+
+- B. Incompleto.
+- A. Completo.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/04ee4921-79f6-4080-91d7-8ef769e37a88)
+
+**Q43.** Indique o nível de escolaridade da sua mãe: Outro.
+
+- A. Estudou, mas não sei até que nível.
+- B. Não estudou.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/98b2f42a-c335-4e8b-bae3-ce07243e3ba7)
+
+**Q56.** Você é responsável por pagar o aluguel ou financiamento de sua casa?
+
+- A. Sim, pago parte do valor;
+- B. Sim, pago todo o valor;
+- C. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/70c7bc2e-c565-473f-8dab-69421ec7d4b1)
+
+---
+
+### **2022:**
+
+---
+
+**Q04.** Você já frequentou alguma vez a escola regular?
+
+- A. Sim, já frequentei escola regular.
+- B. Sim, estou frequentando escolar regular.
+- C. Não, nunca frequentei.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/1b8c73f0-0bf5-40dd-bacd-1441f6a2086a)
+
+**Q05.** Em que série você parou de estudar? (Marque apenas uma resposta)	
+
+- A. 1ª série do ensino fundamental (antigo primário, 1º grau)
+- B. 2ª série do ensino fundamental (antigo primário, 1º grau)
+- C. 3ª série do ensino fundamental (antigo primário, 1ºgrau)
+- D. 4ª série do ensino fundamental (antigo primário, 1º grau)
+- E. 5ª série do ensino fundamental (antigo ginásio, 1º grau)
+- F. 6ª série do ensino fundamental (antigo ginásio, 1º grau)
+- G. 7ª série do ensino fundamental (antigo ginásio, 1ºgrau)
+- H. 8ª série do ensino fundamental (antigo ginásio, 1º grau)
+- I. 1ª série do ensino médio (antigo 2º grau)
+- J. 2ª série do ensino médio (antigo 2º grau)
+- K. 3ª série do ensino médio (antigo 2º grau)
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7d519022-d9f0-4f31-a781-474fa05a6b9f)
+
+**Q10.** Assinale  Sim ou Não se os seguintes  motivos te influenciaram a deixar de frequentar a escola: Falta de tempo para estudar.
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/69c8c4eb-8a7d-4c29-8056-00acf17216a7)
+
+**Q11.** Assinale  Sim ou Não se os seguintes  motivos te influenciaram a deixar de frequentar a escola: Maternidade/paternidade na adolescência.
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/ff365445-fe47-4e28-af9a-f7721f641267)
+
+**Q13.** Assinale  Sim ou Não se os seguintes  motivos te influenciaram a deixar de frequentar a escola: Necessidade de trabalhar para ajudar a família.
+
+- A. Sim;
+- B. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/434c5506-cdcd-44a2-94d9-ed504b454425)
+
+**Q24.** Assinale Sim ou  Não  se os seguintes  motivos te influenciaram a participar do Encceja: Conseguir uma vaga melhor no trabalho atual.	
+
+- A. Sim;
+- B. Não.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/225d58eb-46a2-4913-ad67-df9595329026)
+
+**Q26.** Assinale Sim ou  Não  se os seguintes  motivos te influenciaram a participar do Encceja: Obter um certificado oficial.
+
+- A. Sim;
+- B. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/da67a06d-6fb1-4578-9c26-531d7fcc9bad)
+
+**Q27.** Assinale Sim ou  Não  se os seguintes  motivos te influenciaram a participar do Encceja: Ter acesso ao mercado de trabalho formal.	
+
+- A. Sim;
+- B. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/56af6cfe-6e93-483c-9dcf-1f8e917d15f9)
+
+**Q32.** Indique o maior nível de escolaridade do seu pai:	
+
+- A. 1ª série do ensino fundamental (antigo primário, 1º grau);
+- B. 2ª série do ensino fundamental (antigo primário, 1º grau);
+- C. 3ª série do ensino fundamental (antigo primário, 1ºgrau);
+- D. 4ª série do ensino fundamental (antigo primário, 1º grau);
+- E. 5ª série do ensino fundamental (antigo ginásio, 1º grau);
+- F. 6ª série do ensino fundamental (antigo ginásio, 1º grau);
+- G. 7ª série do ensino fundamental (antigo ginásio, 1ºgrau);
+- H. 8ª série do ensino fundamental (antigo ginásio, 1º grau);
+- I. 1ª série do ensino médio (antigo 2º grau);
+- J. 2ª série do ensino médio (antigo 2º grau);
+- K. 3ª série do ensino médio (antigo 2º grau);
+- L. Ensino Superior;
+- M. Pós-Graduação;
+- N. Ele nunca estudou;
+- O. Não sei.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/86ce0afc-ccd4-4e7d-a115-6a5011ff4775)
+
+**Q34.** Indique o maior nível de escolaridade da sua mãe:	]
+
+- A. 1ª série do ensino fundamental (antigo primário, 1º grau);
+- B. 2ª série do ensino fundamental (antigo primário, 1º grau);
+- C. 3ª série do ensino fundamental (antigo primário, 1ºgrau);
+- D. 4ª série do ensino fundamental (antigo primário, 1º grau);
+- E. 5ª série do ensino fundamental (antigo ginásio, 1º grau);
+- F. 6ª série do ensino fundamental (antigo ginásio, 1º grau);
+- G. 7ª série do ensino fundamental (antigo ginásio, 1ºgrau);
+- H. 8ª série do ensino fundamental (antigo ginásio, 1º grau);
+- I. 1ª série do ensino médio (antigo 2º grau);
+- J. 2ª série do ensino médio (antigo 2º grau);
+- K. 3ª série do ensino médio (antigo 2º grau);
+- L. Ensino Superior;
+- M. Pós-Graduação;
+- N. Ele nunca estudou;
+- O. Não sei.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/f873f6db-344d-4671-a21c-b026efd9f5b9)
+
+**Q47.** Você é responsável por pagar o aluguel ou financiamento de sua casa?
+
+- A. Sim, pago parte do valor;
+- B. Sim, pago todo o valor;
+- C. Não.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/2909710c-d719-4739-baf6-85b5b2e3d3c0)
+
+**Q48.** Quanto da renda familiar é comprometido com o custeio da moradia?	
+
+- A. 10 a 20%;
+- B. 21% a 30%;
+- C. Mais de 30%;
+- D. A renda familiar não é destinada ao custeio de moradia.
+  
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/4ba69529-dcf0-4d7c-a1e3-b2f45366c2d6)
+
+Com todas as questoes de questionario escolhidas, podemos iniciar nossa analise preditiva
+
+
+
+
+
 
 

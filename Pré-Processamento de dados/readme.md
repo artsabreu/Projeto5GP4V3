@@ -370,13 +370,13 @@ FROM ENCCEJA_DICI_REG_2018
 
 ```
 
-Após a execução das consultas, um painel de resultado fica disponivel por select. Disponibilzando a função de exportar em csv cada minmi tabela de resultado.
+Após a execução das consultas, um painel de resultado fica disponivel por select. Disponibilzando a função de exportar em csv cada tabela de resultado.
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/79be37d8-6be8-43f6-8bc8-0637acd862a4)
 
-Após executar todas as consultas, podemos unir todos os resultados de cada questão e rankear para ver qual questão possui o maior numero de aprovados, entregando nossas questões com maior peso na aprovação do candidato.
+Após executar todas as consultas, podemos unir todos os resultados de cada questão e rankear para ver qual questão possui o maior número de aprovados, entregando nossas questões com maior peso na aprovação do candidato.
 
-Para realizar tal tarefa, primeiro é necessario reunir todos os aqruivos csv de cada resposta que foi consultada na imagem anteterior.
+Para realizar tal tarefa, primeiro é necessario reunir todos os aqruivos csv de cada resposta que foi consultada na imagem anterior.
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/a0bcf916-b68d-46c5-8836-7292c1065d7a)
 
@@ -386,11 +386,14 @@ Com o aqruivo chamado allresults.xlsx criado, utilizamos a função obter dados 
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/b9f05719-579c-4f12-8125-eb006c41a588)
 
-Com essa tabela pronta, basta aplicar alguma formula para filtrar as 10 maiores contagens de marcação de alternativa e uma estrutura para tal rankeamento, segue a estrtura de rankeamento abaixo:
+Com essa tabela pronta, fizemos tratamentos para retornar as alternativa mias marcadas e uma estrutura para tal rankeamento, segue a estrtura de rankeamento abaixo:
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/2e4880e3-7c5f-4de7-8f7e-9ba3788e3889)
 
-Com esse rankeamento em mãos, uma analise quantitativa como essa, é um excelente norte para futuras analises preditivas, porem, ao olhar de forma detalhada cada uma das quetoes do rankeamento, a equipe não considerou as questoes validas dendro uma visão qualitativa, por exemplo: 
+Com este resultado quantitativo, tivemos uma melhor visão das principais características socioeconomicas dos candidatos do país, possibilitando, futuramnete, traçar um "perfil do típico brasileiro candidato do ENCCEJA".
+Tento este norte, se torna possíevel realizar analises preditivas com este teor, tanto a nível nacional ou por unidade federativa, faixa etária entre outras a serem exploradas
+
+A baixo, temos um exemplo de uma das características a serem consideradas para análise da composição da população analizada.
 
 Na questão Q03,
 
@@ -400,8 +403,6 @@ A | Zona Rural | 19710
 B | Zona urbana | 229905
 C | Comunidade indígena | 351
 D | Comunidade quilombola | 236
-
-Com essas 229905 marcações de moradores da zona urbana, não parece relevante para a aprovação de um candidato, residir na zona urbana. Com 
 
 
 

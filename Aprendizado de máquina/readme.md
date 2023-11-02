@@ -26,8 +26,243 @@ Juntamente da coluna nota da redação, feature de cateogoria quantitativa numer
 
 Com base nas features escolhidas, podemos concluir que a informação de aprovação geral ainda não esta definida (Apenas a aprovação por matriz de conhecimento de redação de forma independente), é necessario definirmos uma coluna que nos informe se o candidato foi aprovado  de forma completa. Para alcarmos tal informação, a nossa analise seguira o modelo não supervisionado, já que o rotulo de aprovação total não se encontra disponivel.
 
-Com o tipo de aprendizado definido, vamos montar o ambiente de trabalho, linguagens de programação e softwares que serão utilizados no aprendizado. 
+Com o tipo de aprendizado definido, vamos para a linguagens de programação, ambiente de trabalho e softwares que serão utilizados no aprendizado. 
+
+Para linguagem de programação, a linguagem de programação de alto nivel com extreama relevancia no mercado de machine learning e ciencia de dados.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/40ae6e61-8b46-4cbe-849e-5a21fc0ab56c)
+
+Para o ambiente de trabalho foi escolhido o Jupyter juntamente do azure data studio, jupyter sera utilizado para a criação e documentação dos comandos em python e o Azure data Studio vai prosseguir em nosso projeto como o sistema de armazenamento em nuvem da microsoft que armazena nosso banco de dados em SQL.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/30cd2b7f-e7a7-4b5b-9ca1-06eb676757da)
+
+Com alguns pré requisitos definidos, vamos em busca das bases de dados necessarias para executamos nossos modelos. As principal base de dados, é a ENCEEJA_REG_2018, ENCEEJA_REG_2019, ENCEEJA_REG_2020 e ENCEEJA_REG_2022. Atraves de reuniões via teams, a equipe decidiu, que apenas algumas colunas seriam utilizadas nas analises preditivas, são elas:
+
+Questões | 
+--------- | 
+NU_ANO             
+TP_CERTIFICACAO    
+TP_SEXO           
+CO_UF_PROVA        
+SG_UF_PROVA        
+TP_PRESENCA_LC     
+TP_PRESENCA_MT     
+TP_PRESENCA_CN     
+TP_PRESENCA_CH     
+NU_NOTA_LC         
+NU_NOTA_MT         
+NU_NOTA_CN         
+NU_NOTA_CH         
+IN_APROVADO_LC     
+IN_APROVADO_MT     
+IN_APROVADO_CN     
+IN_APROVADO_CH     
+NU_NOTA_REDACAO    
+
+Tbm foram utilizadas as questões do questionario socioeconomicos disponiveis nas ultimas linhas do arquivo [Pré-Processamento de dados](https://github.com/artabreupuc/Projeto5GP4V3/tree/d90d8402430c0799c9de75540d12ebf842f97209/Pr%C3%A9-Processamento%20de%20dados) feature de catagoria categorica numerica.
+
+Para coletar todos esses dados, utilizamos o Azure Data Studio, e a query para tal atividade é responsavel por criar uma tabela temporaria e em seguida é feito um select para filtrar a base apenas com as colunas necessarias, segue o script:
+
+```Ruby
+
+select *
+
+INTO #TEMP_ENCCEJA_REG_2022
+
+FROM ENCCEJA_REG_2022
+
+SELECT[NU_ANO]
+      ,[TP_CERTIFICACAO]
+      ,[TP_SEXO]
+      ,[CO_UF_PROVA]
+      ,[SG_UF_PROVA]
+      ,[TP_PRESENCA_LC]
+      ,[TP_PRESENCA_MT]
+      ,[TP_PRESENCA_CN]
+      ,[TP_PRESENCA_CH]
+      ,[NU_NOTA_LC]
+      ,[NU_NOTA_MT]
+      ,[NU_NOTA_CN]
+      ,[NU_NOTA_CH]
+      ,[IN_APROVADO_LC]
+      ,[IN_APROVADO_MT]
+      ,[IN_APROVADO_CN]
+      ,[IN_APROVADO_CH]
+      ,[NU_NOTA_REDACAO]
+      ,[Q04]
+      ,[Q05]
+      ,[Q10]
+      ,[Q11]
+      ,[Q13]
+      ,[Q24]
+      ,[Q26]
+      ,[Q27]
+      ,[Q32]
+      ,[Q47]
+      ,[Q48]
 
 
+      FROM [dbo].[ENCCEJA_REG_2022]
 
+```
 
+Esse script corresponde ao ano de 2022, segue abaixo os scripts dos outros anos:
+
+2020:
+
+```Ruby
+
+select *
+
+INTO #TEMP_ENCCEJA_REG_2020
+
+FROM ENCCEJA_REG_2020
+
+SELECT[NU_ANO]
+      ,[TP_CERTIFICACAO]
+      ,[TP_SEXO]
+      ,[CO_UF_PROVA]
+      ,[SG_UF_PROVA]
+      ,[TP_PRESENCA_LC]
+      ,[TP_PRESENCA_MT]
+      ,[TP_PRESENCA_CN]
+      ,[TP_PRESENCA_CH]
+      ,[NU_NOTA_LC]
+      ,[NU_NOTA_MT]
+      ,[NU_NOTA_CN]
+      ,[NU_NOTA_CH]
+      ,[IN_APROVADO_LC]
+      ,[IN_APROVADO_MT]
+      ,[IN_APROVADO_CN]
+      ,[IN_APROVADO_CH]
+      ,[NU_NOTA_REDACAO]
+      ,[Q04]
+      ,[Q05]
+      ,[Q08]
+      ,[Q10]
+      ,[Q11]
+      ,[Q13]
+      ,[Q24]
+      ,[Q26]
+      ,[Q27]
+      ,[Q33]
+      ,[Q34]
+      ,[Q35]
+      ,[Q36]
+      ,[Q37]
+      ,[Q39]
+      ,[Q40]
+      ,[Q41]
+      ,[Q42]
+      ,[Q43]
+      ,[Q56]
+
+      FROM [dbo].[ENCCEJA_REG_2020]
+
+```
+
+2019:
+
+```Ruby
+
+select *
+
+INTO #TEMP_ENCCEJA_REG_2019
+
+FROM ENCCEJA_REG_2019
+
+SELECT [NU_ANO]
+      ,[TP_CERTIFICACAO]
+      ,[TP_SEXO]
+      ,[CO_UF_PROVA]
+      ,[SG_UF_PROVA]
+      ,[TP_PRESENCA_LC]
+      ,[TP_PRESENCA_MT]
+      ,[TP_PRESENCA_CN]
+      ,[TP_PRESENCA_CH]
+      ,[NU_NOTA_LC]
+      ,[NU_NOTA_MT]
+      ,[NU_NOTA_CN]
+      ,[NU_NOTA_CH]
+      ,[IN_APROVADO_LC]
+      ,[IN_APROVADO_MT]
+      ,[IN_APROVADO_CN]
+      ,[IN_APROVADO_CH]
+      ,[NU_NOTA_REDACAO]
+      ,[Q04]
+      ,[Q05]
+      ,[Q08]
+      ,[Q10]
+      ,[Q11]
+      ,[Q14]
+      ,[Q16]
+      ,[Q17]
+      ,[Q22]
+      ,[Q23]
+      ,[Q44]
+  FROM [dbo].[ENCCEJA_REG_2019]
+
+```
+
+2018:
+
+```Ruby
+
+select *
+
+INTO #TEMP_ENCCEJA_REG_2018
+
+FROM ENCCEJA_REG_2018 
+
+SELECT[NU_ANO]
+      ,[TP_CERTIFICACAO]
+      ,[TP_SEXO]
+      ,[CO_UF_PROVA]
+      ,[SG_UF_PROVA]
+      ,[TP_PRESENCA_LC]
+      ,[TP_PRESENCA_MT]
+      ,[TP_PRESENCA_CN]
+      ,[TP_PRESENCA_CH]
+      ,[NU_NOTA_LC]
+      ,[NU_NOTA_MT]
+      ,[NU_NOTA_CN]
+      ,[NU_NOTA_CH]
+      ,[IN_APROVADO_LC]
+      ,[IN_APROVADO_MT]
+      ,[IN_APROVADO_CN]
+      ,[IN_APROVADO_CH]
+      ,[NU_NOTA_REDACAO]
+      ,[Q04]
+      ,[Q05]
+      ,[Q08]
+      ,[Q10]
+      ,[Q11]
+      ,[Q14]
+      ,[Q16]
+      ,[Q17]
+      ,[Q22]
+      ,[Q23]
+      ,[Q43]
+      ,[Q47]
+  FROM [dbo].[ENCCEJA_REG_2018]
+
+```
+
+Após a execução de todas essas querys, é feito o donwload dos arquivos em csv e armazenado em uma pasta para melhor localização e futuro uso.
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/25d22673-fae8-4a26-959a-3609dfa4cd89)
+
+---
+
+Dados disponiveis para trabalho!! Agora vamos para o Jupyter para começar a contrução do Notebook em Python. Começando com a criação de um arquivo em python e escolhendo as bibliotecas para o analise, vão ser elas: NumpY, Pandas e scikit-learn. 
+
+```Ruby
+
+import numpy as np #Utilizada para funções matematicas dos mais diversos tipos
+import pandas as pd #Utilizada para análise e manipulação de dados
+import skickitlearn as sklearn #Utilizada para Machine Learning
+print("Imports feitos com sucesso")
+
+```
+
+Em seguida, é feita a importação dos modelos 

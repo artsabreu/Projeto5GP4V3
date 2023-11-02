@@ -307,7 +307,7 @@ print ("Drop feito com sucesso")
 
 Iniciamos com a contagem de candidatos com o valo "F" no atributo TP_SEXO
 
-```
+```Ruby
 count_female = (data['TP_SEXO'] == 'F').sum() #Uma variavel é declarado junto do termo count e em seguida é feito um filtro de um valor de uma variavel
 
 print("Quantidade de linhas com valor 'F' na coluna TP_SEXO:", count_female) #Em seguida, é feito a impressão desse resultado

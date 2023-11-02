@@ -314,3 +314,215 @@ print("Quantidade de linhas com valor 'F' na coluna TP_SEXO:", count_female) #Em
 
 ```
 
+```Ruby
+
+missing_data = data.isna()
+missing_data_count = missing_data.sum()
+print("Valores ausentes por coluna:")
+print(missing_data_count)
+
+```
+
+```Ruby
+
+count_female = (data['TP_SEXO'] == 'M').sum()
+print("Quantidade de linhas com valor 'M' na coluna TP_SEXO:", count_female)
+
+```
+
+```Ruby
+
+# Crie uma coluna para verificar se o aluno passou em todas as disciplinas
+data['APROVADO'] = (data['IN_APROVADO_LC'] + data['IN_APROVADO_MT'] + data['IN_APROVADO_CN'] + data['IN_APROVADO_CH'] == 4) & (data['NU_NOTA_REDACAO'] >= 5)
+data['REPROVADO'] = ~data['APROVADO']
+
+# Separe os recursos (features) e o alvo (target)
+X = data[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH']]
+y = data['APROVADO']
+
+# Crie o modelo
+model = RandomForestClassifier(random_state=42)
+
+# Realize a validação cruzada com 5 partições (k=5) e use a métrica de acurácia
+scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
+
+# Imprima os resultados da validação cruzada
+print("Acurácia em cada partição:", scores)
+print("Acurácia média: {:.2f}".format(scores.mean()))
+
+```
+
+```Ruby
+
+from sklearn.model_selection import train_test_split
+
+# Divida o conjunto de dados em conjuntos de treinamento e teste
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Treine o modelo
+model.fit(X_train, y_train)
+
+# Faça previsões no conjunto de teste
+y_pred = model.predict(X_test)
+
+# Compare as previsões com os valores reais para identificar os erros
+errors = (y_pred != y_test)
+misclassified_data = X_test[errors]
+
+# Imprima as linhas em que o modelo errou
+print("Linhas em que o modelo errou:")
+print(misclassified_data)
+
+```
+
+```Ruby
+
+from sklearn.model_selection import cross_val_predict
+
+# Realize a validação cruzada com 5 partições e obtenha as previsões
+predicted = cross_val_predict(model, X, y, cv=5)
+
+# Compare as previsões com os valores reais para identificar os erros
+errors = (predicted != y)
+misclassified_indices = [i for i, error in enumerate(errors) if error]
+misclassified_data = data.iloc[misclassified_indices]
+
+# Imprima as linhas em que o modelo errou, incluindo as colunas desejadas
+print("Linhas em que o modelo errou:")
+print(misclassified_data[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH', 'IN_APROVADO_LC', 'IN_APROVADO_MT', 'IN_APROVADO_CN', 'IN_APROVADO_CH', 'NU_NOTA_REDACAO']])
+
+
+```
+
+```Ruby
+
+# Suponhamos que 'data' seja o seu DataFrame
+data_da_linha_0 = data.iloc[0]
+
+# Agora você pode imprimir todos os dados da linha 0
+print(data_da_linha_0)
+
+```
+
+```Ruby
+
+from sklearn.model_selection import cross_val_predict
+
+# Realize a validação cruzada com 5 partições e obtenha as previsões
+predicted = cross_val_predict(model, X, y, cv=5)
+
+# Compare as previsões com os valores reais para identificar os erros
+errors = (predicted != y)
+misclassified_indices = [i for i, error in enumerate(errors) if error]
+misclassified_data = data.iloc[misclassified_indices]
+
+# Imprima as linhas em que o modelo errou, incluindo as colunas desejadas
+print("Linhas em que o modelo errou:")
+print(misclassified_data[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH', 'IN_APROVADO_LC', 'IN_APROVADO_MT', 'IN_APROVADO_CN', 'IN_APROVADO_CH', 'NU_NOTA_REDACAO', 'APROVADO']])
+
+
+```
+
+```Ruby
+
+from sklearn.metrics import confusion_matrix
+
+# Treine o modelo em um conjunto de treinamento
+model.fit(X_train, y_train)
+
+# Faça previsões no conjunto de teste
+y_pred = model.predict(X_test)
+
+# Crie a matriz de confusão
+confusion = confusion_matrix(y_test, y_pred)
+
+# Exiba a matriz de confusão
+print("Matriz de Confusão:")
+print(confusion)
+
+
+```
+
+```Ruby
+
+from sklearn.metrics import precision_score, recall_score, f1_score
+
+# Suponhamos que você já tenha a matriz de confusão 'confusion'
+TP = confusion[1, 1]  # Verdadeiras Positivas
+FP = confusion[0, 1]  # Falsas Positivas
+FN = confusion[1, 0]  # Falsas Negativas
+
+# Cálculo de Precisão, Recall e F1-Score
+precisao = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+
+print("Precisão:", precisao)
+print("Recall:", recall)
+print("F1-Score:", f1)
+
+
+```
+
+```Ruby
+
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+# Suponhamos que você já tenha a matriz de confusão 'confusion'
+TP = confusion[1, 1]  # Verdadeiras Positivas
+FP = confusion[0, 1]  # Falsas Positivas
+FN = confusion[1, 0]  # Falsas Negativas
+
+# Cálculo de Acurácia, Precisão, Recall e F1-Score
+acuracia = accuracy_score(y_test, y_pred)
+precisao = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+
+print("Acurácia:", acuracia)
+print("Precisão:", precisao)
+print("Recall:", recall)
+print("F1-Score:", f1)
+
+
+```
+
+```Ruby
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Suponhamos que você já tenha a matriz de confusão 'confusion'
+
+# Crie uma tabela visual da matriz de confusão
+sns.heatmap(confusion, annot=True, fmt="d", cmap="Blues")
+
+# Defina rótulos dos eixos
+plt.xlabel("Classe Real")
+plt.ylabel("Predição")
+
+# Mostre a tabela visual da matriz de confusão
+plt.show()
+
+
+```
+
+```Ruby
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Suponhamos que você já tenha a matriz de confusão 'confusion' (de dimensão 2x2)
+labels = ['Aprovada', 'Reprovada']  # Substitua pelos rótulos das suas classes
+sns.heatmap(confusion, annot=True, fmt="d", cmap="Blues", xticklabels=labels, yticklabels=labels)
+
+# Defina rótulos dos eixos
+plt.xlabel("Detectada")
+plt.ylabel("Real")
+
+# Mostre a tabela visual da matriz de confusão
+plt.show()
+
+
+
+```

@@ -265,4 +265,52 @@ print("Imports feitos com sucesso")
 
 ```
 
-Em seguida, é feita a importação dos modelos 
+Em seguida, é feita a importação dos modelos da bibliteca sklearn Machine Learning, são eles:
+
+```Ruby
+
+from sklearn.model_selection import train_test_split #Utilizado para dividir dados de um arquivo CSV em train (treino) e test (teste)
+
+from sklearn.preprocessing import StandardScaler # Utilizado para calcular a média e o desvio padrão em um conjunto de treinamento, de modo a poder reaplicar posteriormente a mesma transformação no conjunto de teste.
+
+from sklearn.metrics import accuracy_score #Utilizado para medir a acuracia de uma classificação,
+classification_report #Utilizado para fazer o report de metricas de desemepenho do modelo,
+confusion_matrix #Utilizada para ver uma frequencia de classificação para cada classe de um modelo 
+
+from sklearn.model_selection import cross_val_score #Utilizado para retornar uma lista com o resultado dos teste de acuracia de modelos de classificação 
+
+from sklearn.model_selection import GridSearchCV #Utilizado para automatizar o processo de ajuste dos parametros de um algoritmo
+
+from sklearn.ensemble import RandomForestClassifier # Modelo enseble Utilizado para estabelever um connjunto de regras de decisão atraves da união arvores de decisão 
+
+print("Imports feitos com sucesso")
+
+```
+
+Com os modelos e bibliotecas prontos, podemos carregar um arquivo csv para fazer a modelagem, vamos iniciar com o arquivo de 2022 e futuramente fazer a modelagem para os demais arquivos em CSV.
+
+```Ruby
+data = pd.read_csv(r"C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files\2022.csv") # Usando a biblioteca pandas para ler um arquivo CSV.
+
+print("Leitura feita com sucesso")
+
+```
+
+Para otimizar o nosso tempo de trabalho, utilizamos a função data drop para remover todos os arquivos nulos da base de dados
+
+```Ruby
+data.dropna(inplace=True)
+
+print ("Drop feito com sucesso")
+
+```
+
+Iniciamos com a contagem de candidatos com o valo "F" no atributo TP_SEXO
+
+```Ruby
+count_female = (data['TP_SEXO'] == 'F').sum() #Uma variavel é declarado junto do termo count e em seguida é feito um filtro de um valor de uma variavel
+
+print("Quantidade de linhas com valor 'F' na coluna TP_SEXO:", count_female) #Em seguida, é feito a impressão desse resultado
+
+```
+

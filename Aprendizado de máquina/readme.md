@@ -305,14 +305,15 @@ print ("Drop feito com sucesso")
 
 ```
 
-Iniciamos com a contagem de candidatos com o valo "F" no atributo TP_SEXO
+Iniciamos com a contagem de candidatos com o valo "F" no atributo TP_SEXO:
 
 ```Ruby
-count_female = (data['TP_SEXO'] == 'F').sum() #Uma variavel é declarado junto do termo count e em seguida é feito um filtro de um valor de uma variavel
+count_female = (data['TP_SEXO'] == 'F').sum() #Uma variavel é declarada junto do termo "Count" e é feito um filtro de um determinado valor de uma variavel
 
 print("Quantidade de linhas com valor 'F' na coluna TP_SEXO:", count_female) #Em seguida, é feito a impressão desse resultado
 
 ```
+Fazendo a contagem de valores ausentes dentro da base de dados
 
 ```Ruby
 
@@ -323,18 +324,21 @@ print(missing_data_count)
 
 ```
 
+Iniciamos com a contagem de candidatos com o valo "M" no atributo TP_SEXO:
+
 ```Ruby
 
-count_female = (data['TP_SEXO'] == 'M').sum()
+count_female = (data['TP_SEXO'] == 'M').sum() #Uma variavel é declarada junto do termo "Count" e é feito um filtro de um determinado valor de uma variavel
 print("Quantidade de linhas com valor 'M' na coluna TP_SEXO:", count_female)
 
 ```
+A baixo damos inicio ao uso do primeiro modelo escolhido, o Randon Forest Classifier. As florestas aleatórias são um método de aprendizagem de maquina para classificar algoritmos. Compreende várias árvores de decisão individuais que dependem características aleatórias e formação de dados para alcançar uma predição, garantindo uma maior credibilidade do que uma única árvore de decisão.
 
 ```Ruby
 
-# Crie uma coluna para verificar se o aluno passou em todas as disciplinas
+# Crie uma coluna para verificar se o aluno passou em todas as disciplinas utilizando do criterio de aprovação de candidato definido pelo INEP
 data['APROVADO'] = (data['IN_APROVADO_LC'] + data['IN_APROVADO_MT'] + data['IN_APROVADO_CN'] + data['IN_APROVADO_CH'] == 4) & (data['NU_NOTA_REDACAO'] >= 5)
-data['REPROVADO'] = ~data['APROVADO']
+data['REPROVADO'] = ~data['APROVADO'] 
 
 # Separe os recursos (features) e o alvo (target)
 X = data[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH']]

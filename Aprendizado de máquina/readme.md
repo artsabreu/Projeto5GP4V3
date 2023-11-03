@@ -527,6 +527,44 @@ plt.ylabel("Real")
 # Mostre a tabela visual da matriz de confusão
 plt.show()
 
+```
 
+Agora, vamos carregar as 3 bases de dados restantes, 2018, 2019 e 2022. A fim de fazermos a união delas e executarmos o treinamento.
+
+``` Ruby
+
+# Fazendo a leitura das bases de dados de cada ano em csv
+BD2022 = pd.read_csv("2022.csv")
+BD2020 = pd.read_csv("2020.csv")
+BD2019 = pd.read_csv("2019.csv")
+BD2018 = pd.read_csv("2018.csv")
+
+print("Leituras feitas com sucesso")
+
+```
+
+```Ruby
+
+# Fazendo a concatenação dos arquivos e removendo os index de cada uma das bases de dados, deixando um unico index para todo o dataframe
+  
+DBFULL = pd.concat([BD2018, BD2019, BD2020, BD2022], ignore_index=True)
+
+print("Concat feito com sucesso")
+
+```
+
+```Ruby
+
+# Visualizando o novo dataframe
+display(DBFULL)
+
+```
+
+```Ruby
+
+#Removendo os valores nulos do dataframe
+DBFULL.dropna(inplace=True)
+
+print ("Drop feito com sucesso")
 
 ```

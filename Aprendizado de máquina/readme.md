@@ -568,3 +568,36 @@ DBFULL.dropna(inplace=True)
 print ("Drop feito com sucesso")
 
 ```
+
+```Ruby
+
+missing_DBFULL = DBFULL.isna()
+missing_DBFULL_count = missing_DBFULL.sum()
+print("Valores ausentes por coluna:")
+print(missing_DBFULL_count)
+
+```
+
+```Ruby
+
+
+# Crie uma coluna para verificar se o aluno passou em todas as disciplinas utilizando do criterio de aprovação de candidato definido pelo INEP
+DBFULL['APROVADO'] = (DBFULL['IN_APROVADO_LC'] + DBFULL['IN_APROVADO_MT'] + DBFULL['IN_APROVADO_CN'] + DBFULL['IN_APROVADO_CH'] == 4) & (DBFULL['NU_NOTA_REDACAO'] >= 5)
+DBFULL['REPROVADO'] = ~DBFULL['APROVADO'] 
+
+# Separe os recursos (features) e o alvo (target)
+X = DBFULL[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH']]
+y = DBFULL['APROVADO']
+
+# Crie o modelo
+model = RandomForestClassifier(random_state=42)
+
+# Realize a validação cruzada com 5 partições (k=5) e use a métrica de acurácia
+scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
+
+# Imprima os resultados da validação cruzada
+print("Acurácia em cada partição:", scores)
+print("Acurácia média: {:.2f}".format(scores.mean()))
+
+
+```

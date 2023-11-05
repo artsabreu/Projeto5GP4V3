@@ -8,17 +8,17 @@ Essa pasta tem como objetivo, catalogar todo o processo de escolha dos algoritmo
 
 ---
 
-Para a contrução do nosso aprendizade de máquina, o norte sera a busca por uma forma de fazer uma analise preditiva da quantidade de aprovados para a proxima edição da prova, utilizando como atributos, todas as colunas que aramazenam dados referentes a aprovação de cada candidato, são elas:
+Para a contrução do nosso aprendizade de máquina, o norte sera a busca por uma forma de fazer uma analise preditiva da quantidade de aprovados para a proxima edição da prova, utilizando como atributos, todas as colunas que armazenam dados referentes a aprovação de cada candidato, são elas:
 
 - As colunas/features de notas por matriz de conhecimento, que podem ir de 0 até 199 pontos, onde dentro de cada matriz de conhecimento, o aluno precisa alcançar pelo menos 100 pontos para ser considerado aprovado, Fature de categoria quantitativa continua. 
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/a01bbfc1-e7b1-4040-a4ed-42629effefa4)
 
-Juntamente da coluna nota da redação, feature de cateogoria quantitativa numerica.
+Juntamente da coluna nota da redação, feature de cateogoria quantitativa numérica.
 
 ![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/ff66d3e0-b6a6-42b4-a7db-5bdfc4f5b2f0)
 
-- As questoes do questiocnario socioeconomicao dos anos de 2018, 2019, 2020 e 2022, questões essas disponiveis no [Pré-Processamento de dados](https://github.com/artabreupuc/Projeto5GP4V3/tree/d90d8402430c0799c9de75540d12ebf842f97209/Pr%C3%A9-Processamento%20de%20dados) feature de catagoria categorica numerica.
+- As questoes do questionário socioeconômico dos anos de 2018, 2019, 2020 e 2022, questões essas disponíveis no [Pré-Processamento de dados](https://github.com/artabreupuc/Projeto5GP4V3/tree/d90d8402430c0799c9de75540d12ebf842f97209/Pr%C3%A9-Processamento%20de%20dados) feature de categoria numérica.
   
 - As colunas que que armazenam se o candidato foi aprovado ou não por matriz de conhecimento, onde a combinação de (Inserir a combinação de pontuação para o candidato ser aprovado por completo na prova) feature de categoria numerica binária.
 
@@ -336,127 +336,67 @@ A baixo damos inicio ao uso do modelo escolhido, o Randon Forest Classifier. As 
 
 ```Ruby
 
-# Crie uma coluna para verificar se o aluno passou em todas as disciplinas utilizando do criterio de aprovação de candidato definido pelo INEP
+# Criação de uma coluna para verificar se o aluno foi aprovado baseado nos valores das colunas onde contém a informação de aprovado ou não em cada uma das 4 disciplinas
 data['APROVADO'] = (data['IN_APROVADO_LC'] + data['IN_APROVADO_MT'] + data['IN_APROVADO_CN'] + data['IN_APROVADO_CH'] == 4) & (data['NU_NOTA_REDACAO'] >= 5)
 data['REPROVADO'] = ~data['APROVADO'] 
 
-# Separe os recursos (features) e o alvo (target)
+# Separação dos recursos (features) e o alvo (target)
 X = data[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH']]
 y = data['APROVADO']
 
-# Crie o modelo
+# Utilizando o modelo escolhido Random Forest
 model = RandomForestClassifier(random_state=42)
 
-# Realize a validação cruzada com 5 partições (k=5) e use a métrica de acurácia
+# Utilizando a validação cruzada com 5 partições (k=5) e métrica de acurácia
 scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
 
-# Imprima os resultados da validação cruzada
+# Imprimindo os resultados da validação cruzada e acurácia do nosso modelo
 print("Acurácia em cada partição:", scores)
 print("Acurácia média: {:.2f}".format(scores.mean()))
 
 ```
+**Acurácia em cada partição:** [0.9042627  0.90541895 0.90946232 0.90102139 0.8973598 ] <br/>
+**Acurácia média:** 0.90  <br/>
 
-```Ruby
-
-from sklearn.model_selection import train_test_split
-
-# Divida o conjunto de dados em conjuntos de treinamento e teste
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-# Treine o modelo
-model.fit(X_train, y_train)
-
-# Faça previsões no conjunto de teste
-y_pred = model.predict(X_test)
-
-# Compare as previsões com os valores reais para identificar os erros
-errors = (y_pred != y_test)
-misclassified_data = X_test[errors]
-
-# Imprima as linhas em que o modelo errou
-print("Linhas em que o modelo errou:")
-print(misclassified_data)
-
-```
-
-```Ruby
-
-from sklearn.model_selection import cross_val_predict
-
-# Realize a validação cruzada com 5 partições e obtenha as previsões
-predicted = cross_val_predict(model, X, y, cv=5)
-
-# Compare as previsões com os valores reais para identificar os erros
-errors = (predicted != y)
-misclassified_indices = [i for i, error in enumerate(errors) if error]
-misclassified_data = data.iloc[misclassified_indices]
-
-# Imprima as linhas em que o modelo errou, incluindo as colunas desejadas
-print("Linhas em que o modelo errou:")
-print(misclassified_data[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH', 'IN_APROVADO_LC', 'IN_APROVADO_MT', 'IN_APROVADO_CN', 'IN_APROVADO_CH', 'NU_NOTA_REDACAO']])
-
-
-```
-
-```Ruby
-
-# Suponhamos que 'data' seja o seu DataFrame
-data_da_linha_0 = data.iloc[0]
-
-# Agora você pode imprimir todos os dados da linha 0
-print(data_da_linha_0)
-
-```
-
-```Ruby
-
-from sklearn.model_selection import cross_val_predict
-
-# Realize a validação cruzada com 5 partições e obtenha as previsões
-predicted = cross_val_predict(model, X, y, cv=5)
-
-# Compare as previsões com os valores reais para identificar os erros
-errors = (predicted != y)
-misclassified_indices = [i for i, error in enumerate(errors) if error]
-misclassified_data = data.iloc[misclassified_indices]
-
-# Imprima as linhas em que o modelo errou, incluindo as colunas desejadas
-print("Linhas em que o modelo errou:")
-print(misclassified_data[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH', 'IN_APROVADO_LC', 'IN_APROVADO_MT', 'IN_APROVADO_CN', 'IN_APROVADO_CH', 'NU_NOTA_REDACAO', 'APROVADO']])
-
-
-```
+A acurácia mede a proporção de previsões corretas em relação ao total de previsões feitas pelo modelo. 
+Após essa etapa, criamos uma matriz de confusão que é uma ferramenta fundamental para avaliarmos o desempenho de um modelo de classificação além da acurácia, permitindo a quantificação de acertos e erros em relação às classes detectadas e reais.
 
 ```Ruby
 
 from sklearn.metrics import confusion_matrix
 
-# Treine o modelo em um conjunto de treinamento
 model.fit(X_train, y_train)
 
-# Faça previsões no conjunto de teste
 y_pred = model.predict(X_test)
 
-# Crie a matriz de confusão
 confusion = confusion_matrix(y_test, y_pred)
 
-# Exiba a matriz de confusão
 print("Matriz de Confusão:")
 print(confusion)
 
 
 ```
+**Matriz de Confusão:  <br/>
+[[ 9548  2081] <br/>
+[  398 13919]]**  <br/> 
 
+Ao todo temos 4 valores que representam:  <br/>
+
+**Verdadeiros Positivos (True Positives - TP):** O número de instâncias positivas que o modelo classificou corretamente como positivas, por exemplo, quando o aluno foi aprovado e o modelo previu que ele foi aprovado.  <br/>
+**Verdadeiros Negativos (True Negatives - TN):** O número de instâncias negativas que o modelo classificou corretamente como negativas, por exemplo, quando o modelo não previu que o aluno foi aprovado e ele foi reprovado.  <br/>
+**Falsos Positivos (False Positives - FP:** O número de instâncias negativas que o modelo classificou incorretamente como positivas, por exemplo, quando o modelo previu que o aluno foi aprovado, mas ele foi reprovado.  <br/>
+**Falsos Negativos (False Negatives - FN):** O número de instâncias positivas que o modelo classificou incorretamente como negativas, por exemplo, quando o aluno foi aprovado, mas o modelo não previu que ele foi aprovado.  <br/>
+
+Com base na nossa matriz de confusão criada, também calculamos outras métricas, como **precisão, recall e F1-score**. 
+ 
 ```Ruby
 
 from sklearn.metrics import precision_score, recall_score, f1_score
 
-# Suponhamos que você já tenha a matriz de confusão 'confusion'
 TP = confusion[1, 1]  # Verdadeiras Positivas
 FP = confusion[0, 1]  # Falsas Positivas
 FN = confusion[1, 0]  # Falsas Negativas
 
-# Cálculo de Precisão, Recall e F1-Score
 precisao = precision_score(y_test, y_pred)
 recall = recall_score(y_test, y_pred)
 f1 = f1_score(y_test, y_pred)
@@ -467,67 +407,27 @@ print("F1-Score:", f1)
 
 
 ```
+**Precisão:** 0.8699375 (Mede a proporção de instâncias classificadas como positivas que são verdadeiramente positivas, enfatizando a capacidade de evitar falsos positivos.) <br />
+**Recall:** 0.9722008800726409 (Mede a proporção de instâncias positivas corretamente identificadas pelo modelo, enfatizando a capacidade de evitar falsos negativos.) <br />
+**F1-Score:** 0.9182306956493057 (Combina Precisão e Recall em um único valor, fornecendo um equilíbrio entre a capacidade de encontrar todas as instâncias positivas e a capacidade de evitar classificações incorretas.) <br />
 
-```Ruby
-
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-
-# Suponhamos que você já tenha a matriz de confusão 'confusion'
-TP = confusion[1, 1]  # Verdadeiras Positivas
-FP = confusion[0, 1]  # Falsas Positivas
-FN = confusion[1, 0]  # Falsas Negativas
-
-# Cálculo de Acurácia, Precisão, Recall e F1-Score
-acuracia = accuracy_score(y_test, y_pred)
-precisao = precision_score(y_test, y_pred)
-recall = recall_score(y_test, y_pred)
-f1 = f1_score(y_test, y_pred)
-
-print("Acurácia:", acuracia)
-print("Precisão:", precisao)
-print("Recall:", recall)
-print("F1-Score:", f1)
-
-
-```
+Para finalizarmos esta etapa, criamos um gráfico para representar a matriz de confusão. 
 
 ```Ruby
 
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Suponhamos que você já tenha a matriz de confusão 'confusion'
-
-# Crie uma tabela visual da matriz de confusão
-sns.heatmap(confusion, annot=True, fmt="d", cmap="Blues")
-
-# Defina rótulos dos eixos
-plt.xlabel("Classe Real")
-plt.ylabel("Predição")
-
-# Mostre a tabela visual da matriz de confusão
-plt.show()
-
-
-```
-
-```Ruby
-
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Suponhamos que você já tenha a matriz de confusão 'confusion' (de dimensão 2x2)
-labels = ['Aprovada', 'Reprovada']  # Substitua pelos rótulos das suas classes
+labels = ['Aprovada', 'Reprovada'] 
 sns.heatmap(confusion, annot=True, fmt="d", cmap="Blues", xticklabels=labels, yticklabels=labels)
 
-# Defina rótulos dos eixos
 plt.xlabel("Detectada")
 plt.ylabel("Real")
 
-# Mostre a tabela visual da matriz de confusão
 plt.show()
 
 ```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/60244987/38eb2d59-e7cf-40d0-9057-fc42931b22aa)
 
 Agora, vamos carregar as 3 bases de dados restantes, 2018, 2019 e 2022. A fim de fazermos a união delas e executarmos o treinamento.
 

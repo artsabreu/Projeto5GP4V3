@@ -332,7 +332,7 @@ count_female = (data['TP_SEXO'] == 'M').sum() #Uma variavel é declarada junto d
 print("Quantidade de linhas com valor 'M' na coluna TP_SEXO:", count_female)
 
 ```
-A baixo damos inicio ao uso do primeiro modelo escolhido, o Randon Forest Classifier. As florestas aleatórias são um método de aprendizagem de maquina para classificar algoritmos. Compreende várias árvores de decisão individuais que dependem características aleatórias e formação de dados para alcançar uma predição, garantindo uma maior credibilidade do que uma única árvore de decisão.
+A baixo damos inicio ao uso do modelo escolhido, o Randon Forest Classifier. As florestas aleatórias são um método de aprendizagem de maquina para classificar algoritmos. Compreende várias árvores de decisão individuais que dependem características aleatórias e formação de dados para alcançar uma predição, garantindo uma maior credibilidade do que uma única árvore de decisão.
 
 ```Ruby
 

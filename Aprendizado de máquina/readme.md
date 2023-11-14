@@ -501,3 +501,55 @@ print("Acurácia média: {:.2f}".format(scores.mean()))
 
 
 ```
+
+Durante esse processo de iniciar esse aprendizado de maquina, a equipe notou que o contaste da função:
+
+```
+DBFULL = pd.concat([BD2018, BD2019, BD2020, BD2022], ignore_index=True) 
+```
+
+Estava gerando uma sobrecarga no Jupyter, levando em torno de 10 minutos para carregar as bases de dados no notebook e mais 10 para concatenar as mesmas.
+
+Com esse contratempo no caminho, optamos por unir os arquivos em csv previamente para depois carregar para o notebook. Para tal feito, analisamos se a quantidade de colunas estava de acordo com o que estava sendo buscado nos algoritmos e adicionamos a coluna NU_INSCRICAO, sendo considerado um caractere de chave unica, evitando possiveis duplicidades. Alteramos o Script em sql e executamoso mesmo novamente.
+
+
+Com os arquivos csv em mãos, utilizamos um metodo relativamente simples para executar essa união. Utilizando prompt de comando. Definimos o endereço dos arquivos em csv que devem ser unidos, depois usamos a função copy para arquivos csv com a função *csv e definimos um nome para o novo arquivo, para fins de demonstração, o novo arquivo vai se chamar DBTeste.csv.
+
+```
+Microsoft Windows [versão XX.X.XXXXX.XXXX]
+(c) Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\arthu>cd OneDrive
+
+C:\Users\arthu\OneDrive>cd Área de Trabalho
+
+C:\Users\arthu\OneDrive\Área de Trabalho>cd AP Encceja
+
+C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja>cd csv files
+
+C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é 7838-16A9
+
+ Pasta de C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files
+
+13/11/2023  21:17    <DIR>          .
+13/11/2023  21:17    <DIR>          ..
+07/11/2023  23:20       182.697.841 2018.csv
+08/11/2023  00:13       309.189.740 2019.csv
+08/11/2023  05:22       263.290.059 2020.csv
+08/11/2023  19:39       180.172.495 2022.csv
+               4 arquivo(s)    935.350.135 bytes
+               2 pasta(s)   111.486.144.512 bytes disponíveis
+
+C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>copy *.csv DBTeste.csv
+2018.csv
+2019.csv
+2020.csv
+2022.csv
+        1 arquivo(s) copiado(s).
+
+C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>
+```
+
+Após essa união, temos um arquivo completo com aproximadamente 9 milhoes de registros. Com base no que foi dito, vamos seguir para a criação do algoritmos. Segue o print do arquivo de teste de união, o que foi usado se encontra disponivel no repositorio do Jupyter.

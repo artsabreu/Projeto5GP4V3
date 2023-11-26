@@ -607,4 +607,51 @@ print("Acurácia média: {:.2f}".format(scores.mean()))
 ```
 Ao tentar rodar esse script, recebemos a seguiguente mensagem de erro:
 
+```Ruby
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+File ~\anaconda3\Lib\site-packages\pandas\core\indexes\base.py:3653, in Index.get_loc(self, key)
+   3652 try:
+-> 3653     return self._engine.get_loc(casted_key)
+   3654 except KeyError as err:
+
+File ~\anaconda3\Lib\site-packages\pandas\_libs\index.pyx:147, in pandas._libs.index.IndexEngine.get_loc()
+
+File ~\anaconda3\Lib\site-packages\pandas\_libs\index.pyx:176, in pandas._libs.index.IndexEngine.get_loc()
+
+File pandas\_libs\hashtable_class_helper.pxi:7080, in pandas._libs.hashtable.PyObjectHashTable.get_item()
+
+File pandas\_libs\hashtable_class_helper.pxi:7088, in pandas._libs.hashtable.PyObjectHashTable.get_item()
+
+KeyError: 'IN_APROVADO_LC'
+
+The above exception was the direct cause of the following exception:
+
+KeyError                                  Traceback (most recent call last)
+Cell In[15], line 2
+      1 # Crie uma coluna para verificar se o aluno passou em todas as disciplinas
+----> 2 data['APROVADO'] = (data['IN_APROVADO_LC'] + data['IN_APROVADO_MT'] + data['IN_APROVADO_CN'] + data['IN_APROVADO_CH'] == 4) & (data['NU_NOTA_REDACAO'] >= 5)
+      3 data['REPROVADO'] = ~data['APROVADO']
+      5 # Separe os recursos (features) e o alvo (target)
+
+File ~\anaconda3\Lib\site-packages\pandas\core\frame.py:3761, in DataFrame.__getitem__(self, key)
+   3759 if self.columns.nlevels > 1:
+   3760     return self._getitem_multilevel(key)
+-> 3761 indexer = self.columns.get_loc(key)
+   3762 if is_integer(indexer):
+   3763     indexer = [indexer]
+
+File ~\anaconda3\Lib\site-packages\pandas\core\indexes\base.py:3655, in Index.get_loc(self, key)
+   3653     return self._engine.get_loc(casted_key)
+   3654 except KeyError as err:
+-> 3655     raise KeyError(key) from err
+   3656 except TypeError:
+   3657     # If we have a listlike key, _check_indexing_error will raise
+   3658     #  InvalidIndexError. Otherwise we fall through and re-raise
+   3659     #  the TypeError.
+   3660     self._check_indexing_error(key)
+
+KeyError: 'IN_APROVADO_LC'
+```
+
 Com base no erro que foi ocorrido, a equipe uniu esforços para tentar combater tal erro, não encontramos sucesso. Agora a equipe busca uma forma de reverter esse impecilio. 

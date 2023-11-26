@@ -553,3 +553,45 @@ C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>
 ```
 
 Após essa união, temos um arquivo completo com aproximadamente 9 milhoes de registros. Com base no que foi dito, vamos seguir para a criação do algoritmos. Segue o print do arquivo de teste de união, o que foi usado se encontra disponivel no repositorio do Jupyter.
+
+Após a união dos arquivos, começamos o algoritmo subindo as bibliotecas necessárias para o nosso projeto, como pode ser visto na imagem abaixo: 
+```
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_score
+from sklearn.ensemble import RandomForestClassifier
+
+print("Imports feitos com sucesso")
+```
+Depois da importação da biblioteca, seguimos para a leitura da base de dados.
+
+Em seguida, rodamos o script do modelo de Random Forest que realizará a análise dos dados baseado na aprovação nas 4 áreas do conhecimento mais a nota de redação e realizará a predição baseado nas notas das 4 áreas. 
+```
+# Crie uma coluna para verificar se o aluno passou em todas as disciplinas
+DBFULL['APROVADO'] = (DBFULL['IN_APROVADO_LC'] + DBFULL['IN_APROVADO_MT'] + DBFULL['IN_APROVADO_CN'] + DBFULL['IN_APROVADO_CH'] == 4) & (DBFULL['NU_NOTA_REDACAO'] >= 5)
+DBFULL['REPROVADO'] = ~DBFULL['APROVADO']
+
+# Separe os recursos (features) e o alvo (target)
+X = DBFULL[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH']]
+y = DBFULL['APROVADO']
+
+# Crie o modelo
+model = RandomForestClassifier(random_state=42)
+
+# Realize a validação cruzada com 5 partições (k=5) e use a métrica de acurácia
+scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
+
+# Imprima os resultados da validação cruzada
+print("Acurácia em cada partição:", scores)
+print("Acurácia média: {:.2f}".format(scores.mean()))
+```
+Ao tentar rodar esse script, recebemos a seguiguente mensagem de erro:
+```
+
+```

@@ -504,7 +504,7 @@ print("Acurácia média: {:.2f}".format(scores.mean()))
 
 Durante esse processo de iniciar esse aprendizado de maquina, a equipe notou que o contaste da função:
 
-```
+```Ruby
 DBFULL = pd.concat([BD2018, BD2019, BD2020, BD2022], ignore_index=True) 
 ```
 
@@ -513,9 +513,9 @@ Estava gerando uma sobrecarga no Jupyter, levando em torno de 10 minutos para ca
 Com esse contratempo no caminho, optamos por unir os arquivos em csv previamente para depois carregar para o notebook. Para tal feito, analisamos se a quantidade de colunas estava de acordo com o que estava sendo buscado nos algoritmos e adicionamos a coluna NU_INSCRICAO, sendo considerado um caractere de chave unica, evitando possiveis duplicidades. Alteramos o Script em sql e executamoso mesmo novamente.
 
 
-Com os arquivos csv em mãos, utilizamos um metodo relativamente simples para executar essa união. Utilizando prompt de comando. Definimos o endereço dos arquivos em csv que devem ser unidos, depois usamos a função copy para arquivos csv com a função *csv e definimos um nome para o novo arquivo, para fins de demonstração, o novo arquivo vai se chamar DBTeste.csv.
+Com os arquivos csv em mãos, utilizamos um metodo relativamente simples para executar essa união. Utilizando prompt de comando. Definimos o endereço dos arquivos em csv que devem ser unidos, depois usamos a função copy para arquivos csv com a função *csv e definimos um nome para o novo arquivo, para fins de demonstração, o novo arquivo vai se chamar DBFULL.csv.
 
-```
+```Ruby
 Microsoft Windows [versão XX.X.XXXXX.XXXX]
 (c) Microsoft Corporation. Todos os direitos reservados.
 
@@ -542,7 +542,7 @@ C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>dir
                4 arquivo(s)    935.350.135 bytes
                2 pasta(s)   111.486.144.512 bytes disponíveis
 
-C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>copy *.csv DBTeste.csv
+C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>copy *.csv DBFULL.csv
 2018.csv
 2019.csv
 2020.csv
@@ -555,7 +555,8 @@ C:\Users\arthu\OneDrive\Área de Trabalho\AP Encceja\csv files>
 Após essa união, temos um arquivo completo com aproximadamente 9 milhoes de registros. Com base no que foi dito, vamos seguir para a criação do algoritmos. Segue o print do arquivo de teste de união, o que foi usado se encontra disponivel no repositorio do Jupyter.
 
 Após a união dos arquivos, começamos o algoritmo subindo as bibliotecas necessárias para o nosso projeto, como pode ser visto na imagem abaixo: 
-```
+
+```Ruby
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -572,7 +573,8 @@ print("Imports feitos com sucesso")
 Depois da importação da biblioteca, seguimos para a leitura da base de dados.
 
 Em seguida, rodamos o script do modelo de Random Forest que realizará a análise dos dados baseado na aprovação nas 4 áreas do conhecimento mais a nota de redação e realizará a predição baseado nas notas das 4 áreas. 
-```
+
+```Ruby
 # Crie uma coluna para verificar se o aluno passou em todas as disciplinas
 DBFULL['APROVADO'] = (DBFULL['IN_APROVADO_LC'] + DBFULL['IN_APROVADO_MT'] + DBFULL['IN_APROVADO_CN'] + DBFULL['IN_APROVADO_CH'] == 4) & (DBFULL['NU_NOTA_REDACAO'] >= 5)
 DBFULL['REPROVADO'] = ~DBFULL['APROVADO']

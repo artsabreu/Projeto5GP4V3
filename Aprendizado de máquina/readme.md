@@ -570,7 +570,19 @@ from sklearn.ensemble import RandomForestClassifier
 
 print("Imports feitos com sucesso")
 ```
-Depois da importação da biblioteca, seguimos para a leitura da base de dados.
+Depois da importação da biblioteca, seguimos para a leitura da base de dados e também fizemos a limpeza das linhas que não continham dados. 
+
+```Ruby
+data = pd.read_csv("DBFULL.csv", sep='\t')
+
+print("Imports feitos com sucesso")
+```
+
+```Ruby
+data.dropna(inplace=True)
+
+print("Drop feitos com sucesso")
+```
 
 Em seguida, rodamos o script do modelo de Random Forest que realizará a análise dos dados baseado na aprovação nas 4 áreas do conhecimento mais a nota de redação e realizará a predição baseado nas notas das 4 áreas. 
 
@@ -594,85 +606,5 @@ print("Acurácia em cada partição:", scores)
 print("Acurácia média: {:.2f}".format(scores.mean()))
 ```
 Ao tentar rodar esse script, recebemos a seguiguente mensagem de erro:
-
-```Ruby
-ValueError                                Traceback (most recent call last)
-Cell In[19], line 13
-     10 model = RandomForestClassifier(random_state=42)
-     12 # Realize a validação cruzada com 5 partições (k=5) e use a métrica de acurácia
----> 13 scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
-     15 # Imprima os resultados da validação cruzada
-     16 print("Acurácia em cada partição:", scores)
-
-File ~\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py:562, in cross_val_score(estimator, X, y, groups, scoring, cv, n_jobs, verbose, fit_params, pre_dispatch, error_score)
-    559 # To ensure multimetric format is not supported
-    560 scorer = check_scoring(estimator, scoring=scoring)
---> 562 cv_results = cross_validate(
-    563     estimator=estimator,
-    564     X=X,
-    565     y=y,
-    566     groups=groups,
-    567     scoring={"score": scorer},
-    568     cv=cv,
-    569     n_jobs=n_jobs,
-    570     verbose=verbose,
-    571     fit_params=fit_params,
-    572     pre_dispatch=pre_dispatch,
-    573     error_score=error_score,
-    574 )
-    575 return cv_results["test_score"]
-
-File ~\anaconda3\Lib\site-packages\sklearn\utils\_param_validation.py:211, in validate_params.<locals>.decorator.<locals>.wrapper(*args, **kwargs)
-    205 try:
-    206     with config_context(
-    207         skip_parameter_validation=(
-    208             prefer_skip_nested_validation or global_skip_validation
-    209         )
-    210     ):
---> 211         return func(*args, **kwargs)
-    212 except InvalidParameterError as e:
-    213     # When the function is just a wrapper around an estimator, we allow
-    214     # the function to delegate validation to the estimator, but we replace
-    215     # the name of the estimator by the name of the function in the error
-    216     # message to avoid confusion.
-    217     msg = re.sub(
-    218         r"parameter of \w+ must be",
-    219         f"parameter of {func.__qualname__} must be",
-    220         str(e),
-    221     )
-
-File ~\anaconda3\Lib\site-packages\sklearn\model_selection\_validation.py:301, in cross_validate(estimator, X, y, groups, scoring, cv, n_jobs, verbose, fit_params, pre_dispatch, return_train_score, return_estimator, return_indices, error_score)
-    298 else:
-    299     scorers = _check_multimetric_scoring(estimator, scoring)
---> 301 indices = cv.split(X, y, groups)
-    302 if return_indices:
-    303     # materialize the indices since we need to store them in the returned dict
-    304     indices = list(indices)
-
-File ~\anaconda3\Lib\site-packages\sklearn\model_selection\_split.py:796, in StratifiedKFold.split(self, X, y, groups)
-    762 def split(self, X, y, groups=None):
-    763     """Generate indices to split data into training and test set.
-    764 
-    765     Parameters
-   (...)
-    794     to an integer.
-    795     """
---> 796     y = check_array(y, input_name="y", ensure_2d=False, dtype=None)
-    797     return super().split(X, y, groups)
-
-File ~\anaconda3\Lib\site-packages\sklearn\utils\validation.py:969, in check_array(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)
-    967     n_samples = _num_samples(array)
-    968     if n_samples < ensure_min_samples:
---> 969         raise ValueError(
-    970             "Found array with %d sample(s) (shape=%s) while a"
-    971             " minimum of %d is required%s."
-    972             % (n_samples, array.shape, ensure_min_samples, context)
-    973         )
-    975 if ensure_min_features > 0 and array.ndim == 2:
-    976     n_features = array.shape[1]
-
-ValueError: Found array with 0 sample(s) (shape=(0,)) while a minimum of 1 is required.
-
-```
 
 Com base no erro que foi ocorrido, a equipe uniu esforços para tentar combater tal erro, não encontramos sucesso. Agora a equipe busca uma forma de reverter esse impecilio. 

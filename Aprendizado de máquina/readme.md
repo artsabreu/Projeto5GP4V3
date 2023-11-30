@@ -655,3 +655,279 @@ KeyError: 'IN_APROVADO_LC'
 ```
 
 Com base no erro que foi ocorrido, a equipe uniu esforços para tentar combater tal erro, não encontramos sucesso. Agora a equipe busca uma forma de reverter esse impecilio. 
+
+
+Após estudar e analisar os erros que foram reportados a cima, a equipe chegou a uma solução. Vamos entender melhor cada etapa desse novo processo:
+
+Com base em pesquisas na documentação NumPy do Python e debates pelo StarkOverFlow, chegamos a conclusão que o problema estava nos valores ausentes da base de dados e como a base de dados concatenada estava impedindo o avanço do projeto. Decidimos então fazer um tratamento de limpeza diferente nas bases de dados, segue os scripts:
+
+``` Ruby
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_score
+from sklearn.ensemble import RandomForestClassifier
+
+print("Imports feitos com sucesso")
+```
+
+Imports feitos com sucesso
+
+```
+BD2022 = pd.read_csv("2022.csv")
+BD2020 = pd.read_csv("2020.csv")
+BD2019 = pd.read_csv("2019.csv")
+BD2018 = pd.read_csv("2018.csv")
+
+print("Leituras feitas com sucesso")
+```
+
+Leituras feitas com sucesso
+
+Após importar todas as bases, visualimos cada uma delas e retornamos o data type de cada coluna das bases de dados:
+
+```Ruby
+BD2018.head()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/b72f9fe2-dbb5-44c3-87f6-4bde628f5813)
+
+```Ruby
+BD2018.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/58ac6825-c773-4aa1-ad69-aa132afb9cca)
+
+
+```Ruby
+BD2019.head()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/c55211ac-fd9d-4cec-b1fa-37760d3008db)
+
+```Ruby
+BD2019.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/77d45a6e-6cbe-4530-879b-deb3965e9d7a)
+
+
+```Ruby
+BD2020.head()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/28e473f0-fa57-436c-9072-b78f551590c5)
+
+```Ruby
+BD2020.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/71054221-2f09-4898-88c2-f622ba6845b6)
+
+
+```Ruby
+BD2022.head()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/373db5cc-f8bc-4072-baea-0a1b3c9a4a26)
+
+```Ruby
+BD2022.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/91e47c42-b3f9-4bc0-915e-ba0c26259ac7)
+
+Com todas as bases de dados verificadas, decidimos por fazer a remoção de valores nulos das bases de dados separadamente, utilizaremos o ```df.dropna(inplace=True)``` e contar a quantidade e valores ausentes de cada coluna para verificas, utilizando o ```missing_data = df.isna()``` e o ```missing_data_count = missing_data.sum()```.
+
+Segue o processo para cada ano:
+
+**Ano de 2018:**
+
+```Ruby
+BD2018.dropna(inplace=True)
+
+print("Drop feitos com sucesso")
+```
+Drop feitos com sucesso
+
+```Ruby
+missing_data = BD2018.isna()
+missing_data_count = missing_data.sum()
+print("Valores ausentes por coluna:")
+print(missing_data_count)
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/133d5b75-0a57-4793-8c1b-e94d45bf8407)
+
+```Ruby
+BD2018.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/51ea4a54-7077-420a-b7d3-b3d8bb888a8a)
+
+**Ano de 2019:**
+
+```Ruby
+BD2019.dropna(inplace=True)
+
+print("Drop feitos com sucesso")
+```
+Drop feitos com sucesso
+
+```Ruby
+missing_data = BD2019.isna()
+missing_data_count = missing_data.sum()
+print("Valores ausentes por coluna:")
+print(missing_data_count)
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/b9efb5c3-0efb-4fd0-bc75-6b9a0eef0558)
+
+```Ruby
+BD2019.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/5d8ea2fa-ea86-4180-88a3-95bbaec057eb)
+
+**Ano de 2020:**
+
+```Ruby
+BD2020.dropna(inplace=True)
+
+print("Drop feitos com sucesso")
+```
+Drop feitos com sucesso
+
+```Ruby
+missing_data = BD2020.isna()
+missing_data_count = missing_data.sum()
+print("Valores ausentes por coluna:")
+print(missing_data_count)
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/b3f8f6f0-40f8-4f29-9ef1-c73297ce713f)
+
+```Ruby
+BD2020.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/28c451bb-82b1-48b3-9990-289c432176c0)
+
+**Ano de 2022:**
+
+```Ruby
+BD2022.dropna(inplace=True)
+
+print("Drop feitos com sucesso")
+```
+Drop feitos com sucesso
+
+```Ruby
+missing_data = BD2022.isna()
+missing_data_count = missing_data.sum()
+print("Valores ausentes por coluna:")
+print(missing_data_count
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/f0158b6d-3ae7-4513-9b91-2728eca6b311)
+
+```Ruby
+BD2022.info()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/55258871-613e-44d7-9a08-710e71bd71a9)
+
+Com todas as bases de dados limpas, hora de concatenar as mesmas:
+
+```Ruby
+DBFULL = pd.concat([BD2018, BD2019, BD2020, BD2022], ignore_index=True)
+
+print("Concat feito com sucesso")
+```
+
+```Ruby
+DBFULL.head()
+```
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/d03e0978-a9dd-49d3-92b4-6c7cac9a228c)
+
+```Ruby
+# Crie uma coluna para verificar se o aluno passou em todas as disciplinas
+DBFULL['APROVADO'] = (DBFULL['IN_APROVADO_LC'] + DBFULL['IN_APROVADO_MT'] + DBFULL['IN_APROVADO_CN'] + DBFULL['IN_APROVADO_CH'] == 4) & (DBFULL['NU_NOTA_REDACAO'] >= 5)
+DBFULL['REPROVADO'] = ~DBFULL['APROVADO']
+
+# Separe os recursos (features) e o alvo (target)
+X = DBFULL[['NU_NOTA_LC', 'NU_NOTA_MT', 'NU_NOTA_CN', 'NU_NOTA_CH']]
+y = DBFULL['APROVADO']
+
+# Crie o modelo
+model = RandomForestClassifier(random_state=42)
+
+# Realize a validação cruzada com 5 partições (k=5) e use a métrica de acurácia
+scores = cross_val_score(model, X, y, cv=5, scoring='accuracy')
+
+# Imprima os resultados da validação cruzada
+print("Acurácia em cada partição:", scores)
+print("Acurácia média: {:.2f}".format(scores.mean()))
+```
+
+Acurácia em cada partição: [0.95550311 0.95249605 0.95238156 0.94938716 0.9103776 ]
+Acurácia média: 0.94
+
+```Ruby
+from sklearn.model_selection import train_test_split
+
+print("Import feito com sucesso")
+```
+Import feito com sucesso
+
+```Ruby
+from sklearn.metrics import confusion_matrix
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+
+# Treine o modelo em um conjunto de treinamento
+model.fit(X_train, y_train)
+
+# Faça previsões no conjunto de teste
+y_pred = model.predict(X_test)
+
+# Crie a matriz de confusão
+confusion = confusion_matrix(y_test, y_pred)
+
+# Exiba a matriz de confusão
+print("Matriz de Confusão:")
+print(confusion)
+```
+Matriz de Confusão:
+[[117889  11889]
+ [  2194 128115]]
+
+```Ruby
+from sklearn.metrics import precision_score, recall_score, f1_score
+
+# Suponhamos que você já tenha a matriz de confusão 'confusion'
+TP = confusion[1, 1]  # Verdadeiras Positivas
+FP = confusion[0, 1]  # Falsas Positivas
+FN = confusion[1, 0]  # Falsas Negativas
+
+# Cálculo de Precisão, Recall e F1-Score
+precisao = precision_score(y_test, y_pred)
+recall = recall_score(y_test, y_pred)
+f1 = f1_score(y_test, y_pred)
+
+print("Precisão:", precisao)
+print("Recall:", recall)
+print("F1-Score:", f1)
+```
+Precisão: 0.9150809976857804
+Recall: 0.9831630969464887
+F1-Score: 0.9479011368302671
+
+```Ruby
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Suponhamos que você já tenha a matriz de confusão 'confusion' (de dimensão 2x2)
+labels = ['Aprovada', 'Reprovada']  # Substitua pelos rótulos das suas classes
+sns.heatmap(confusion, annot=True, fmt="d", cmap="Blues", xticklabels=labels, yticklabels=labels)
+
+# Defina rótulos dos eixos
+plt.xlabel("Detectada")
+plt.ylabel("Real")
+
+# Mostre a tabela visual da matriz de confusão
+plt.show()
+```
+
+![image](https://github.com/artabreupuc/Projeto5GP4V3/assets/141786256/7d5becea-1337-43a5-b54f-096245885e5e)
+
+

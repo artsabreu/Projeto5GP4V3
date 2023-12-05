@@ -1,10 +1,7 @@
 ## Otimização e conclusão:
 
-Agora vamos dar inicio a conclusão do nosso projeto, passando pelas otimizações em nossos processos de aprendizado de maquina e finalizando com a visualização dos resultados.
 
----
-
-Durante nossa caminhada do projeto, buscamos a excelencia em nossso projeto. Vamos voltar ao passado e repassar alguns pontos de nossa historia.
+Durante nossa caminhada do projeto, buscamos o foco no aprendizado da equipe à luz dos conteúdos acadêmico. Vamos voltar ao passado e repassar alguns pontos de nossa historia.
 
 Iniciamos catalogando nossos dados e todos os seus [Metadados](https://github.com/artabreupuc/Projeto5GP4V3/tree/dd3ce8ec65092e25db12d28a51c0c09049ea6394/Metadados) Levando a uma breve instrução de navegação pelas pastas, onde os metadados ficam separados por ano. Dentro de cada ano, a seguinte coleção de pastas separa os metadados: DADOS,  DICIONÁRIO DE DADOS, MATRIZ DE REFERENCIA, SQLSCRIPTSGERAIS, INPUTS EM SPS E SAS. E a navegação pelas branchs do git. 
 

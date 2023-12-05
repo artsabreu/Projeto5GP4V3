@@ -1,7 +1,7 @@
 ## Otimização e conclusão:
 
 
-Durante nossa caminhada do projeto, buscamos o foco no aprendizado da equipe à luz dos conteúdos acadêmico. Vamos voltar ao passado e repassar alguns pontos de nossa historia.
+Durante nossa caminhada do projeto, tivemnos como foco principal o aprendizado da equipe à luz dos conteúdos acadêmico. Vamos voltar ao passado e repassar alguns pontos de nossa historia.
 
 Iniciamos catalogando nossos dados e todos os seus [Metadados](https://github.com/artabreupuc/Projeto5GP4V3/tree/dd3ce8ec65092e25db12d28a51c0c09049ea6394/Metadados) Levando a uma breve instrução de navegação pelas pastas, onde os metadados ficam separados por ano. Dentro de cada ano, a seguinte coleção de pastas separa os metadados: DADOS,  DICIONÁRIO DE DADOS, MATRIZ DE REFERENCIA, SQLSCRIPTSGERAIS, INPUTS EM SPS E SAS. E a navegação pelas branchs do git. 
 

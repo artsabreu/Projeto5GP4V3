@@ -11,6 +11,11 @@ Em seguida, iniciamos nosso pré processamento de dados [Pré Procesamento de da
 
 Com base nos questionarios, utilizamos a ferramenta excel para fazermos algumas alterações nos mesmos. Logo sem seguida, importamos o dicionario de cada ano para cada base de dado utilizada no projeto, no caso a ENCCEJA_REG_2018, ENCCEJA_REG_2019, ENCCEJA_REG_2020 e ENCCEJA_REG_2022.
 
-Após a importação, a equipe a equipe buscou alguma forma de mapear as questões socioeconômicas com maior influencia na aprovação dos candidatos. Com base em sinopses estatisticas desenvolvidas pelo INEP, criação de tabelas temporararias no Azure data studio, seleção de questões via conversação de equipe, chegamos em uma conclusão. A escolha das questões socioeconomicas para analise preditiva.
+Após a importação, a equipe a equipe buscou alguma forma de mapear as questões socioeconômicas com maior influencia na aprovação dos candidatos. Com base em sinopses estatisticas desenvolvidas pelo INEP, criação de tabelas temporarias no Azure data studio, seleção de questões via conversação de equipe, chegamos em uma conclusão. A escolha das questões socioeconomicas para analise preditiva.
 
+A análise foi realizada utilizando o **Jupyter** como ambiente de trabalho e o **Pyhton** como linguagem de programação.
+Optamos em fazer todo o processo de tratamento e aprendizado de máquina com apenas 1 base, como teste, para posteriormente, ampliar para todas as 4 bases.
 
+Aplicamos tratamento para remoção de arquivos/ dados nulos nas bases e foi escolhido o modelo **Classificador Folrestal Ramdom** como método de aprendizado de máquina. Obtivemos ótimos valores de **acurácia**, com **médoa de 0,94**.
+
+Para avaliar o desempenho do modelo, também criamos uma **matriz de confusão** contendo 4 valores: **Verdadeiros Positivos, Verdadeiros Negativos, Falsos Positivos, Falsos Negativos**. Esta matriz foi utilizada como base para calculos métricas como **Resultado**, **Recall** e **F1-score** com respectivamnente os seguintes valores: ( 0,9150809976857804 , 0,9831630969464887, 0,9479011368302671 )
